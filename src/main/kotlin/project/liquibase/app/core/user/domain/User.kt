@@ -22,6 +22,14 @@ class User(
     @Column(name = "last_modified_at")
     val lastModifiedAt: LocalDateTime? = LocalDateTime.now()
 
+    @Column(name = "marketing")
+    var marketing: Boolean = false
+        private set
+
+    @Column(name = "deleted")
+    var deleted: Boolean = false
+        private set
+
     val name: String
         get() = _name
 
