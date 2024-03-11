@@ -6,4 +6,7 @@
     <changeSet id="v1.1.0/user/add-deleted" author="jun" context="dev">
         <sqlFile path="add-deleted.sql" relativeToChangelogFile="true"/>
     </changeSet>
+    <changeSet id="v1.1.0/datachangelog/add-index-execution-order" author="jun" context="dev">
+        <sqlFile path="add-index-execution-order.sql" relativeToChangelogFile="true"/>
+    </changeSet>
 </databaseChangeLog>
