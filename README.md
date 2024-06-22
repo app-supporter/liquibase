@@ -3,22 +3,20 @@
 
 ![image](https://avatars.githubusercontent.com/u/170791409?s=400&u=dc5c8ff1ff0be4e08bd47e773f94db276f48896d&v=4)
 
-<div align="center">
+</div>
   
 <div align="center">
   
   
   [📚 스터디 모집, 학습 공유 플랫폼](https://lnshare-study.com/) <br>
 
+  [![Release](https://img.shields.io/badge/-%F0%9F%92%AB%20Web%20Service-blue)](https://lnshare-study.com/)
+  [![Release](https://img.shields.io/badge/%E2%9C%A8%20release-v1.0.0-brightgreen)]()
+
 </div>
 <br/>
 
-</div align="center">
 
-[![Release](https://img.shields.io/badge/-%F0%9F%92%AB%20Web%20Service-blue)](https://lnshare-study.com/)
-[![Release](https://img.shields.io/badge/%E2%9C%A8%20release-v1.0.0-brightgreen)]()
-
-</div>
 
 <br/><br/><br/><br/><br/><br/>
 
