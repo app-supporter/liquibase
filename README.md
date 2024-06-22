@@ -41,9 +41,11 @@
 
 <br/><br/><br/>
 
-협업/자동화 툴은 Jira/Confluencer, Slack을 사용했으며, 코드 컨벤션 관리 및 코드 스멜 제거를 위해 CheckStlye, PMD, SpotBugs, Sonarqube와 같은 정적 코드 분석 툴을 도입했습니다. 기술관련 글은 한 곳에서 관리하기 위해 Gitbook을 사용했습니다.
+협업/자동화 툴은 Jira/Confluencer, Slack을 사용했으며, 코드 컨벤션 관리 및 코드 스멜 제거를 위해 CheckStlye, PMD, SpotBugs, Sonarqube와 같은 정적 코드 분석 툴을 도입했습니다. 
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FofFbV%2FbtsH9GLbQKK%2FyJNQ4fKw2DK1VaW6vRbpY1%2Fimg.png)
+
+> 기술 및 팀 규칙은 한 곳에서 관리하기 위해 [Gitbook]()을 사용했습니다.
 
 <br/><br/><br/>
 
