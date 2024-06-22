@@ -34,7 +34,7 @@
 
 # 🐳 CICD
 
-CICD 과정은 다음과 같습니다. 상세한 내용은 [해당 블로그]()를 참조해주세요.
+CICD 과정은 다음과 같습니다. 상세한 내용은 [CICD 과정 적용하기]()를 참조해주세요.
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbaJNZC%2FbtsH9tFfhc0%2FeFIs2y3g09odtGYn6WmPY1%2Fimg.png)
 
