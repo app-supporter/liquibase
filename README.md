@@ -38,7 +38,7 @@
 
 개발자가 PR을 생성하면, 코드 리뷰를 거쳐 
 
-![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbaJNZC%2FbtsH9tFfhc0%2FeFIs2y3g09odtGYn6WmPY1%2Fimg.png)
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fr93f9%2FbtsH8AyHS2Z%2FGkQyAVeysys35m6sR5fhA1%2Fimg.png)
 
 ```text
 1. PR -> 2. CodeReview -> 
