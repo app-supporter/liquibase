@@ -38,10 +38,6 @@
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fr93f9%2FbtsH8AyHS2Z%2FGkQyAVeysys35m6sR5fhA1%2Fimg.png)
 
-```text
-1.PR --> 2.CodeReview --> 3.merge to dev --> 4.deploy --> 5.approve --> 6.merge to main  --> 7.deploy
-```
-
 <br/><br/><br/><br/><br/>
 
 # Contributors
