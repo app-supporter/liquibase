@@ -35,9 +35,15 @@
 
 # ☁️ InfraStructure.
 
-서비스 구축을 위해 AWS를 활용했으며, 서버 오케스트레이션을 관리하기 위해 Amazon ECS를 사용했습니다. 
+서비스 구축을 위해 AWS를 활용했으며, 서버 오케스트레이션을 관리하기 위해 AWS ECS를 사용했습니다. 
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FMJrxl%2FbtsH8D9VGQD%2F3iBRoE6uo58NXsl9e2r260%2Fimg.png)
+
+<br/><br/><br/>
+
+협업, 자동화 툴은 Jira/Confluencer, Slack을 기반으로 Gitbook, 정적 코드 분석 툴을 사용했습니다.
+
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FofFbV%2FbtsH9GLbQKK%2FyJNQ4fKw2DK1VaW6vRbpY1%2Fimg.png)
 
 <br/><br/><br/>
 
@@ -77,11 +83,7 @@ PR이 생성되면 코드 **`정적 분석`** 을 합니다. 코드 리뷰를 �
     </tr>
 </table>
 
-<br/><br/><br/><br/><br/><br/><br/>
 
-# Collaboration
-
-![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FofFbV%2FbtsH9GLbQKK%2FyJNQ4fKw2DK1VaW6vRbpY1%2Fimg.png)
 
 <br/><br/><br/><br/><br/><br/><br/>
 
