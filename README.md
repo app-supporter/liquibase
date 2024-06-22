@@ -59,46 +59,16 @@ PR이 생성되면 코드 **`정적 분석`** 을 합니다. 코드 리뷰를 �
 
 > 팀 규칙 및 기술 관련 글은 한 곳에서 관리하기 위해 [Gitbook]()을 사용했습니다.
 
+<br/><br/><br/><br/><br/><br/><br/>
+
 # Contributors
 
-<br/>
-
-<table align = "center">
-    <thead>
-        <th align = "center">Youl</th>
-        <th align = "center">Jun</th>
-        <th align = "center"></th>
-        <th align = "center"></th>
-        <th align = "center"></th>
-    </thead>
-    <tbody>
-        <td align = "center"><a href="https://github.com/HongJungKim-dev"><img height="150px" width="150px" src="https://avatars.githubusercontent.com/u/54700818?v=4" /></a></td>
-        <td align = "center"><a href="https://github.com/devjun10"><img height="150px" width="150px" src="https://avatars.githubusercontent.com/u/92818747?v=4" /></a></td>
-        <td align = "center"><a href=""><div height="150px" width="150px"></div></a></td>
-        <td align = "center"><a href=""><div height="150px" width="150px"></div></a></td>
-        <td align = "center"><div height="150px" width="150px"></div></td>
-    </tbody>
-    <tr>
-        <td align = "center">Backend</td>
-        <td align = "center">Backend</td>
-        <td align = "center"></td>
-        <td align = "center"></td>
-      <td align = "center"></td>
-    </tr>
-</table>
-
-
-
-<br/><br/><br/><br/><br/><br/><br/>
-
-## Contributors
 | [Youl](https://github.com/kkk5474096) | [Jun](https://github.com/unam98) |
 | :---: | :---: |
-|<img width="200" src="https://github.com/depromeet/TeumTeum-Android/assets/89737271/513cb651-bc4a-4b91-85f3-5090da6cfc4a.jpg">|<img width="200" src="https://avatars.githubusercontent.com/u/92818747?v=4">|
-|**Backend**|**Backend**|
+|<img width="100" src="https://github.com/depromeet/TeumTeum-Android/assets/89737271/513cb651-bc4a-4b91-85f3-5090da6cfc4a.jpg">|<img width="100" src="https://avatars.githubusercontent.com/u/92818747?v=4">|
+|**Backend**|**Backend, Infra**|
 
 
 <br/><br/><br/><br/><br/><br/><br/>
-
 
 
