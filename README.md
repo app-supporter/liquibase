@@ -73,13 +73,7 @@ Backend, Infrastructure, 협업에 사용된 기술 스택은 다음과 같습�
 
 > 공개되는 Api 문서는 RestDocs를, 개발 서버에는 Swagger + RestDocs를 조합해 사용하고 있습니다. 개발 서버 Api 문서는 조회할 수는 있지만 AWS Inbound 룰로 인해 사용할 수는 없습니다.  
 
-<br/><br/><br/><br/><br/>
-
-운영 로그와 시스템 로그를 별도로 관리하고 있으며, 운영 로그는 Grafana Loki를, 시스템 로그는 AWS CloudWatch로 관리하고 있습니다. 인프라 코드와 더 자세한 설명은 [해당 레포지토리]()를 참조해주세요.
-
-![image]()
-
-<br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/>
 
 ## ☁️ InfraStructure.
 
@@ -87,7 +81,13 @@ Backend, Infrastructure, 협업에 사용된 기술 스택은 다음과 같습�
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FMJrxl%2FbtsH8D9VGQD%2F3iBRoE6uo58NXsl9e2r260%2Fimg.png)
 
-<br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/>
+
+운영 로그와 시스템 로그를 별도로 관리하고 있으며, 운영 로그는 Grafana Loki를, 시스템 로그는 AWS CloudWatch로 관리하고 있습니다. 인프라 코드와 더 자세한 설명은 [해당 레포지토리]()를 참조해주세요.
+
+![image]()
+
+<br/><br/><br/><br/><br/><br/>
 
 ## ☁️ Cor.
 
