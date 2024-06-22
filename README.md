@@ -138,10 +138,10 @@ core 패키지는 , common 패키지는 프로젝트에서 공통으로 사용�
 ├── dailyge-api
 │     ......
 │       └─ app
-│           ├─ common    # 프로젝트 공통 설정
-│           └─ core
-│               └─ user  # 도메인            
-│                   │─ external         #  외부 호출 계층(Optional) 
+│           ├─ common    # 프로젝트 공통 패키지
+│           └─ core      # 서비스 API 패키지
+│               └─ user     # 도메인            
+│                   ├─ external         #  외부 호출 계층(Optional) 
 │                   ├─ presentation     #  Controller 계층            
 │                   ├─ facade           #  퍼사드 계층(Optional)        
 │                   ├─ application      #  Service 계층               
