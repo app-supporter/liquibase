@@ -11,6 +11,8 @@
   [📚 스터디 모집, 학습 공유 플랫폼](https://lnshare-study.com/) <br>
 
   [![Release](https://img.shields.io/badge/-%F0%9F%92%AB%20Web%20Service-blue)](https://lnshare-study.com/)
+  [![Release](https://img.shields.io/badge/%E2%9C%A8%20release-v1.0.0-brightgreen)]() [![Release](https://img.shields.io/badge/%E2%9C%A8%20release-v1.0.0-brightgreen)]() <br/>
+  [![Release](https://img.shields.io/badge/%E2%9C%A8%20release-v1.0.0-brightgreen)]()
   [![Release](https://img.shields.io/badge/%E2%9C%A8%20release-v1.0.0-brightgreen)]()
 
 </div>
@@ -34,7 +36,7 @@
 
 # 🐳 CICD
 
-CICD 과정은 다음과 같습니다. 상세한 내용은 [CICD 과정 적용하기]()를 참조해주세요.
+개발자가 PR을 생성하면, 코드 리뷰를 거쳐 
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbaJNZC%2FbtsH9tFfhc0%2FeFIs2y3g09odtGYn6WmPY1%2Fimg.png)
 
