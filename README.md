@@ -121,7 +121,7 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 <br/><br/><br/><br/>
 
-모듈간 의존관계는 다음과 같습니다. 모듈 간 불필요한 의존성 제거, 빌드 시간 단축을 위해 위해 Spring Data Jpa를 제외한 다른 의존성은 runtimeOnly 또는 imeimplementation [구성(Configuration)](https://docs.gradle.org/current/userguide/declaring_dependencies.html)을 사용했습니다. 
+모듈간 의존관계는 다음과 같습니다. 불필요한 의존성 제거, 빌드 시간 단축을 위해 위해 Spring Data Jpa를 제외하고는 runtimeOnly 또는 imeimplementation [구성(Configuration)](https://docs.gradle.org/current/userguide/declaring_dependencies.html)을 사용하고 있습니다.
 
 <br/>
 
