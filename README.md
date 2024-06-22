@@ -61,10 +61,9 @@
 
 # ✨ 사용된 기술.
 
-Backend, Infrastructure, 협업에 사용된 기술 스택은 다음과 같습니다.
+Backend, Infrastructure, 협업에 사용된 기술 스택/툴은 다음과 같습니다.
 
 <br/>
-
 
 ## 🖥️ Backend.
 
