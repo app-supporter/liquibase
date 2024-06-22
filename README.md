@@ -1,4 +1,24 @@
 
+![Untitled-5-01](https://user-images.githubusercontent.com/68919333/195964523-e2d4c5a6-03c7-44ac-bebb-af9f2b952101.png)
+<div align="center">
+
+  [📚 스터디 모집, 학습 공유 플랫폼](https://lnshare-study.com/) <br>
+
+`# 학습` `# 스터디` `# 성장` `# 공유` `# 자극` <br/>
+`# 스터디 모집` `# 회고 스터디`
+
+</div>
+<br/>
+
+<div align="center">
+
+[![Release](https://img.shields.io/badge/-%F0%9F%92%AB%20Web%20Service-blue)](https://lnshare-study.com/)
+[![Release](https://img.shields.io/badge/%E2%9C%A8%20release-v1.0.0-brightgreen)]()
+
+</div>
+
+<br/><br/><br/><br/><br/><br/>
+
 # Backend
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FG9Nmi%2FbtsH9FZOYqq%2FmoUcUwmJZ4Mz9Lxz4LVKc1%2Fimg.png)
