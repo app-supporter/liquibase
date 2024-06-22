@@ -60,13 +60,13 @@
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FG9Nmi%2FbtsH9FZOYqq%2FmoUcUwmJZ4Mz9Lxz4LVKc1%2Fimg.png)
 
-> 공개되는 Api 문서는 RestDocs를, 개발 서버에는 Swagger + RestDocs를 조합해 사용하고 있습니다. 개발 서버 Api 문서는 조회할 수는 있지만 AWS Security Group Inbound 룰로 인해 사용할 수는 없습니다.  
+> 공개되는 Api 문서는 RestDocs를, 개발 서버에는 Swagger + RestDocs를 조합해 사용하고 있습니다. 개발 서버 Api 문서는 조회할 수는 있지만 AWS Inbound 룰로 인해 사용할 수는 없습니다.  
 
 <br/><br/><br/><br/><br/><br/><br/>
 
 # ☁️ InfraStructure.
 
-서비스 구축을 위해 AWS를 활용했으며, 서버 오케스트레이션을 관리하기 위해 AWS ECS를 사용했습니다. 
+서비스 구축을 위해 AWS를 활용했으며, 정적 자원은 CloudFront와 S3를, 서버 오케스트레이션은 AWS ECS를 사용했습니다. 
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FMJrxl%2FbtsH8D9VGQD%2F3iBRoE6uo58NXsl9e2r260%2Fimg.png)
 
