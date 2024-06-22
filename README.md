@@ -41,11 +41,7 @@
 
 <br/><br/><br/>
 
-협업/자동화 툴은 이슈를 트래킹하기 위해 Jira/Confluencer를 사용했으며, Slack을 통해 결과를 받고 있습니다. 팀원 간 코드 컨벤션 관리 및 코드 스멜 제거를 위해 CheckStlye, PMD, SpotBugs, Sonarqube와 같은 정적 코드 분석 툴을 도입했습니다. 
-
-![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FofFbV%2FbtsH9GLbQKK%2FyJNQ4fKw2DK1VaW6vRbpY1%2Fimg.png)
-
-> 팀 규칙 및 기술 관련 글은 한 곳에서 관리하기 위해 [Gitbook]()을 사용했습니다.
+운영 로그와 시스템 로그를 별도로 관리하기 위해 
 
 <br/><br/><br/>
 
@@ -56,6 +52,12 @@ PR이 생성되면 코드 **`정적 분석`** 을 합니다. 코드 리뷰를 �
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fr93f9%2FbtsH8AyHS2Z%2FGkQyAVeysys35m6sR5fhA1%2Fimg.png)
 
 <br/><br/><br/>
+
+협업/자동화 툴은 이슈를 트래킹하기 위해 Jira/Confluencer를 사용했으며, Slack을 통해 결과를 받고 있습니다. 팀원 간 코드 컨벤션 관리 및 코드 스멜 제거를 위해 CheckStlye, PMD, SpotBugs, Sonarqube와 같은 정적 코드 분석 툴을 도입했습니다. 
+
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FofFbV%2FbtsH9GLbQKK%2FyJNQ4fKw2DK1VaW6vRbpY1%2Fimg.png)
+
+> 팀 규칙 및 기술 관련 글은 한 곳에서 관리하기 위해 [Gitbook]()을 사용했습니다.
 
 # Contributors
 
