@@ -60,7 +60,7 @@
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FG9Nmi%2FbtsH9FZOYqq%2FmoUcUwmJZ4Mz9Lxz4LVKc1%2Fimg.png)
 
-> 공개되는 Api 문서는 RestDocs를, 개발 서버에는 Swagger + RestDocs를 조합해 사용하고 있습니다. 개발 서버 Api 문서는 조회할 수는 있지만 VPC Inbound 룰로 인해 사용할 수는 없습니다.  
+> 공개되는 Api 문서는 RestDocs를, 개발 서버에는 Swagger + RestDocs를 조합해 사용하고 있습니다. 개발 서버 Api 문서는 조회할 수는 있지만 AWS Security Group Inbound 룰로 인해 사용할 수는 없습니다.  
 
 <br/><br/><br/><br/><br/><br/><br/>
 
