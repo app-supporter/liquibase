@@ -21,8 +21,8 @@
         <th align = "center">Jun</th>
     </thead>
     <tbody>
-        <td align = "center"><a href="https://github.com/HongJungKim-dev"><img height="100px" width="110px" src="https://avatars.githubusercontent.com/u/54700818?v=4" /></a></td>
-        <td align = "center"><a href="https://github.com/devjun10"><img height="100px" width="110px" src="https://avatars.githubusercontent.com/u/92818747?v=4" /></a></td>
+        <td align = "center"><a href="https://github.com/HongJungKim-dev"><img height="150px" width="150px" src="https://avatars.githubusercontent.com/u/54700818?v=4" /></a></td>
+        <td align = "center"><a href="https://github.com/devjun10"><img height="150px" width="150px" src="https://avatars.githubusercontent.com/u/92818747?v=4" /></a></td>
     </tbody>
     <tr>
         <td align = "center">Backend</td>
