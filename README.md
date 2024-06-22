@@ -121,11 +121,13 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 <br/><br/><br/><br/>
 
-모듈간 연관관계는 다음과 같습니다. 모듈에 대한 설명은 각 모듈 README.md를 참고해주세요.
+모듈간 연관관계는 다음과 같습니다. 모듈 간 불필요한 의존성 제거와 빌드 시간 단축을 위해 위해 대체로 implementation을 사용했습니다.
 
 <br/>
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcHD02o%2FbtsH8G6bEze%2FgkOXvPS5h9ZNeIdKRDl9VK%2Fimg.png)
+
+> Spring Data Jpa는 implementation을 사용할 경우, import를 하지 못하기 때문에 불가피하게 api를 사용했습니다. 
 
 <br/><br/><br/><br/><br/><br/><br/>
 
