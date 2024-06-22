@@ -31,13 +31,13 @@
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FG9Nmi%2FbtsH9FZOYqq%2FmoUcUwmJZ4Mz9Lxz4LVKc1%2Fimg.png)
 
-<br/><br/><br/><br/><br/>
+<br/><br/><br/>
 
 # ☁️ InfraStructure.
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FMJrxl%2FbtsH8D9VGQD%2F3iBRoE6uo58NXsl9e2r260%2Fimg.png)
 
-<br/><br/><br/><br/><br/>
+<br/><br/><br/>
 
 # 🐳 CICD.
 
@@ -45,7 +45,7 @@ PR이 생성되면 코드 **`정적 분석`** 을 합니다. 코드 리뷰를 �
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fr93f9%2FbtsH8AyHS2Z%2FGkQyAVeysys35m6sR5fhA1%2Fimg.png)
 
-<br/><br/><br/><br/><br/>
+<br/><br/><br/>
 
 # Contributors
 
