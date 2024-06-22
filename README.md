@@ -68,45 +68,48 @@
 
 <br/><br/><br/><br/><br/>
 
-협업 툴은 이슈 트래킹을 위해 Jira/Confluencer를 사용했으며, Zapier와 GitAction을 사용해 자동화를 했습니다. 팀원간 커뮤니케이션은 Slack을 사용하며, 이를 통해 CICD 과정에서 발생한 리포트와 AWS 비용 결과를 보고 받고 있습니다. 팀원 간 코드 컨벤션 관리 및 코드 스멜 제거를 위해 CheckStlye, PMD, SpotBugs, Sonarqube와 같은 정적 코드 분석 툴을 도입했습니다. 
+운영 로그와 시스템 로그를 별도로 관리하고 있으며, 운영 로그는 Grafana Loki를, 시스템 로그는 AWS CloudWatch로 관리하고 있습니다. 인프라 코드와 더 자세한 설명은 [해당 레포지토리]()를 참조해주세요.
+
+![image]()
+
+<br/><br/><br/><br/><br/>
+
+협업 툴은 이슈 트래킹을 위해 Jira/Confluencer를, 자동화 툴은 Zapier와 GitAction을 사용했습니다. 팀원 간 커뮤니케이션은 Slack으로 이루어지며, 또한 이를 통해 CICD 과정에서 발생한 리포트, AWS 비용 결과를 보고 받고 있습니다. 팀원 간 코드 컨벤션 관리 및 코드 스멜 제거를 위해 CheckStlye, PMD, SpotBugs, Sonarqube와 같은 정적 코드 분석 툴을 도입했습니다. 
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FofFbV%2FbtsH9GLbQKK%2FyJNQ4fKw2DK1VaW6vRbpY1%2Fimg.png)
 
-> 팀 규칙 및 기술 관련 글은 [Gitbook]()에서 관리중입니다.
-> 
+> 팀 규칙 및 기술 관련 글은 [Gitbook]()을 사용해 관리하고 있습니다.
+
 <br/><br/><br/><br/><br/><br/><br/>
 
 # ☁️ InfraStructure.
 
-서비스 구축을 위해 AWS를 활용했으며, 정적 자원은 CloudFront와 S3를, 서버 오케스트레이션은 AWS ECS를 사용했습니다. 
+서비스 구축을 위해 AWS를 활용했으며, 정적 자원은 S3와 CloudFront를, 서버 오케스트레이션은 AWS ECS를 사용했습니다. 
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FMJrxl%2FbtsH8D9VGQD%2F3iBRoE6uo58NXsl9e2r260%2Fimg.png)
-
-<br/><br/><br/><br/><br/>
-
-운영 로그와 시스템 로그를 별도로 관리하고 있으며, 운영 로그는 Grafana Loki를, 시스템 로그는 AWS CloudWatch로 관리하고 있습니다. 인프라 코드와 더 자세한 설명은 [해당 레포지토리]()를 참조해주세요.
-
-![image]()
 
 <br/><br/><br/><br/><br/><br/><br/>
 
 # 🐳 CICD.
 
-PR이 생성되면 자동으로 정적 분석을 시작 합니다. 코드 리뷰를 거친 후, dev 브랜치로 병합이 되면 개발 서버에 배포가 되며 인수 테스트를 합니다. 이후 QA과정을 거쳐 기능의 동작 유무, 버그 리포팅을 합니다. main 브랜치로 병합이 되면 상용 서버로 배포가 이루어 지며, 최종 결과를 보고받습니다.
+PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결과를 보고받습니다. 팀원 간 코드 리뷰를 거친 후, dev 브랜치로 병합이 되면 개발 서버로 배포가 되며, 인수 테스트가 시작됩니다. 자동 인수 테스트 외에도 QA를 진행하며 기능의 동작 유무, 버그 리포팅을 합니다. main 브랜치로 병합이 되면 상용 서버로 배포가 되며, 최종 결과를 보고받습니다.
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fr93f9%2FbtsH8AyHS2Z%2FGkQyAVeysys35m6sR5fhA1%2Fimg.png)
-
 
 <br/><br/><br/><br/><br/><br/><br/>
 
 # 👨‍👩‍👦 모듈 연관관계
 
-프로젝트에 사용된 모듈은 **`dailyge-api`**, **`admin-api`**, **`storage`**, **`support`** 모듈 입니다. 도메인 모델과 영속 모델은 별도로 구분하지 않았습니다.
+프로젝트에 사용된 모듈은 **`dailyge-api`**, **`admin-api`**, **`storage`**, **`support`** 모듈 입니다. 각 모듈의 기능은 다음과 같습니다. 
 
 1. **`dailyge-api`**: 서비스 API 모듈입니다.
 2. **`scheduler`**: 스케줄링 모듈입니다.
 3. **`storage`**: 데이터베이스 모듈입니다.
 4. **`support`**: 로깅, 모니터링 등 API 모듈을 지원하는 모듈입니다.
+
+<br/><br/><br/><br/>
+
+도메인 모델과 영속 모델은 별도로 구분하지 않았습니다.
 
 <br/><br/><br/><br/>
 
