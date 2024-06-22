@@ -145,7 +145,7 @@ core 패키지는 , common 패키지는 프로젝트에서 공통으로 사용�
 │                   ├─ presentation     #  표면 계층(Controller)            
 │                   ├─ facade           #  퍼사드 계층(Facade)       - Optional
 │                   ├─ application      #  서비스 계층(Service)               
-│                   └─ persistence      #  영속 계층(Persistence)            
+│                   └─ persistence      #  영속 계층(Repository)            
 └── 
 
 ......
