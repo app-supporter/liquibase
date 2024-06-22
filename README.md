@@ -9,7 +9,7 @@
   
   [📚 스터디 모집, 학습 공유 플랫폼](https://lnshare-study.com/) <br>
 
-  [![Release](https://img.shields.io/badge/-📚_API_Documentation-green)](https://lnshare-study.com/) [![Release](https://img.shields.io/badge/-📚_Tech_Blog-blue)]() <br/>
+  [![Release](https://img.shields.io/badge/-📚_API_Documentation-green)](https://lnshare-study.com/) [![Release](https://img.shields.io/badge/-📚_Team_Blog-blue)]() <br/>
   [![Release](https://img.shields.io/badge/%E2%9C%A8%20release-v1.0.0-brightgreen)]()
   [![Release](https://img.shields.io/badge/%E2%9C%A8%20release-v1.0.0-brightgreen)]()
 
