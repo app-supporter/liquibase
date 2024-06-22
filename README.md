@@ -60,6 +60,13 @@
 
 <br/><br/><br/><br/><br/><br/><br/>
 
+# ✨ 사용된 기술.
+
+Backend, Infrastructure, 협업에 사용된 기술 스택은 다음과 같습니다.
+
+<br/>
+
+
 # ✨ Backend.
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FG9Nmi%2FbtsH9FZOYqq%2FmoUcUwmJZ4Mz9Lxz4LVKc1%2Fimg.png)
