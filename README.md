@@ -32,6 +32,8 @@
 
 <br/><br/><br/><br/><br/><br/><br/>
 
+# Collaboration
+
 사용된 협업 툴은 다음과 같습니다.
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FofFbV%2FbtsH9GLbQKK%2FyJNQ4fKw2DK1VaW6vRbpY1%2Fimg.png)
@@ -47,6 +49,5 @@
 
 <br/><br/><br/><br/><br/><br/><br/>
 
-# Collaboration
 
-![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FofFbV%2FbtsH9GLbQKK%2FyJNQ4fKw2DK1VaW6vRbpY1%2Fimg.png)
+
