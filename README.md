@@ -20,26 +20,26 @@
 
 <br/><br/><br/><br/>
 
-# Content
+# Content.
 
 1. Introduction.
 2. dddd
 
 <br/><br/><br/><br/><br/><br/>
 
-# ✨ Backend
+# ✨ Backend.
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FG9Nmi%2FbtsH9FZOYqq%2FmoUcUwmJZ4Mz9Lxz4LVKc1%2Fimg.png)
 
 <br/><br/><br/><br/><br/>
 
-# ☁️ InfraStructure
+# ☁️ InfraStructure.
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FMJrxl%2FbtsH8D9VGQD%2F3iBRoE6uo58NXsl9e2r260%2Fimg.png)
 
 <br/><br/><br/><br/><br/>
 
-# 🐳 CICD
+# 🐳 CICD.
 
 PR이 생성되면 코드 **`정적 분석`** 을 합니다. 코드 리뷰를 거친 후, dev 브랜치로 병합이 되면 dev 서버에 배포가 되며, QA과정을 거친 후, prod 서버로 배포가 이루어 집니다.
 
