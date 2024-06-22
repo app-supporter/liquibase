@@ -70,9 +70,9 @@
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FMJrxl%2FbtsH8D9VGQD%2F3iBRoE6uo58NXsl9e2r260%2Fimg.png)
 
-<br/><br/><br/>
+<br/><br/><br/><br/><br/>
 
-운영 로그와 시스템 로그를 별도로 관리하고 있으며, 운영 로그는 Grafana Loki를, 시스템 로그는 AWS CloudWatch로 관리하고 있습니다.
+운영 로그와 시스템 로그를 별도로 관리하고 있으며, 운영 로그는 Grafana Loki를, 시스템 로그는 AWS CloudWatch로 관리하고 있습니다. 인프라 코드와 더 자세한 설명은 [해당 레포지토리]()를 참조해주세요.
 
 ![image]()
 
