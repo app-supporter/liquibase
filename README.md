@@ -133,6 +133,7 @@ Spring Data Jpa는 imeimplementation을 사용하면 (캡슐화로 인해) 다�
 
 ```java
 dependencies {
+    // JPA
     api("org.springframework.boot:spring-boot-starter-data-jpa")
 
     ......
