@@ -1,4 +1,4 @@
-# Liquibase
+# Team
 
 <br/>
 
@@ -17,10 +17,12 @@
     </tr>
 </table>
 
-
-
-
 <br/><br/><br/><br/><br/>
+
+# Collaboration
+
+![image]()
+
 
 ## 1. Getting Started
 
