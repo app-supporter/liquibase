@@ -22,14 +22,15 @@
 
 <div align="center">
   
-  **Table of contents.** <br>
+  **Table of contents.** 
 
-  1. 서비스 소개
+1. 서비스 소개
   2. 테스트<br/>
   3. 테스트<br/>
   4. 테스트<br/>
 
 </div>
+
 <br/>
 
 
