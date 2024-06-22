@@ -35,6 +35,8 @@
 
 # ☁️ InfraStructure.
 
+서비스 구축을 위해 AWS를 활용했으며, 서버 오케스트레이션을 관리하기 위해 Amazon ECS를 사용했습니다. 
+
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FMJrxl%2FbtsH8D9VGQD%2F3iBRoE6uo58NXsl9e2r260%2Fimg.png)
 
 <br/><br/><br/>
