@@ -117,7 +117,7 @@ PR이 생성되면 코드 **`정적 분석`** 을 합니다. 코드 리뷰를 �
 | [Youl](https://github.com/kkk5474096) | [Jun](https://github.com/unam98) |
 | :---: | :---: |
 |<img width="100" src="https://github.com/depromeet/TeumTeum-Android/assets/89737271/513cb651-bc4a-4b91-85f3-5090da6cfc4a.jpg">|<img width="100" src="https://avatars.githubusercontent.com/u/92818747?v=4">|
-|**Backend, Frontend**|**Backend, Infra**|
+|**Backend, UI**|**Backend, Infra**|
 
 
 <br/><br/><br/><br/><br/><br/><br/>
