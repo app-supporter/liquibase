@@ -36,6 +36,8 @@
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbaJNZC%2FbtsH9tFfhc0%2FeFIs2y3g09odtGYn6WmPY1%2Fimg.png)
 
+> 1. PR -> 2. CodeReview -> 3. 
+
 <br/><br/><br/><br/><br/>
 
 # Contributors
