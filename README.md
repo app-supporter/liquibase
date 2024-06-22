@@ -1,11 +1,14 @@
 
-![Untitled-5-01](https://user-images.githubusercontent.com/68919333/195964523-e2d4c5a6-03c7-44ac-bebb-af9f2b952101.png)
 <div align="center">
 
-  [📚 스터디 모집, 학습 공유 플랫폼](https://lnshare-study.com/) <br>
+![image](https://avatars.githubusercontent.com/u/170791409?s=400&u=dc5c8ff1ff0be4e08bd47e773f94db276f48896d&v=4)
 
-**`# 학습`** **`# 스터디`** `# 성장` `# 공유` `# 자극` <br/>
-`# 스터디 모집` `# 회고 스터디`
+<div align="center">
+  
+<div align="center">
+  
+  
+  [📚 스터디 모집, 학습 공유 플랫폼](https://lnshare-study.com/) <br>
 
 </div>
 <br/>
