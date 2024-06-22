@@ -80,7 +80,7 @@
 
 # 🐳 CICD.
 
-PR이 생성되면 자동으로 정적 분석을 합니다. 코드 리뷰를 거친 후, dev 브랜치로 병합이 되면 개발 서버에 배포가 되며 인수 테스트를 합니다. 이후 QA과정을 거쳐 기능의 동작 유무, 버그 리포팅을 합니다. main 브랜치로 병합이 되면 상용 서버로 배포가 이루어 지며, 최종 결과를 보고받습니다.
+PR이 생성되면 자동으로 정적 분석을 시작 합니다. 코드 리뷰를 거친 후, dev 브랜치로 병합이 되면 개발 서버에 배포가 되며 인수 테스트를 합니다. 이후 QA과정을 거쳐 기능의 동작 유무, 버그 리포팅을 합니다. main 브랜치로 병합이 되면 상용 서버로 배포가 이루어 지며, 최종 결과를 보고받습니다.
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fr93f9%2FbtsH8AyHS2Z%2FGkQyAVeysys35m6sR5fhA1%2Fimg.png)
 
