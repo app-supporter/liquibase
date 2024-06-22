@@ -41,7 +41,7 @@
 
 <br/><br/><br/>
 
-협업, 자동화 툴은 Jira/Confluencer, Slack을 기반으로 Gitbook, 정적 코드 분석 툴을 사용했습니다.
+협업/자동화 툴은 Jira/Confluencer, Slack을 기반으로 CheckStlye, PMD, SpotBugs, Sonarqube와 같은 정적 코드 분석 툴을 사용했습니다. 기술관련 글은 한 곳에서 관리하기 위해 Gitbook을 사용했습니다.
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FofFbV%2FbtsH9GLbQKK%2FyJNQ4fKw2DK1VaW6vRbpY1%2Fimg.png)
 
