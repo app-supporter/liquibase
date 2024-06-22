@@ -4,20 +4,19 @@
 
 <table align = "center">
     <thead>
+        <th align = "center">Youl</th>
         <th align = "center">Jun</th>
-        <th align = "center">Eden</th>
     </thead>
     <tbody>
+        <td align = "center"><a href="https://github.com/HongJungKim-dev"><img height="100px" width="110px" src="https://avatars.githubusercontent.com/u/54700818?v=4" /></a></td>
         <td align = "center"><a href="https://github.com/devjun10"><img height="100px" width="110px" src="https://avatars.githubusercontent.com/u/92818747?v=4" /></a></td>
-        <td align = "center"><a href="https://github.com/HongJungKim-dev"><img height="100px" width="110px" src="https://images.velog.io/images/jaeeunxo1/post/b809e9c6-b5af-4cce-a13f-c9a745b4f4bb/768px-Ei-sc-github.svg.png" /></a></td>
     </tbody>
     <tr>
         <td align = "center">Backend</td>
-        <td align = "center">Frontend</td>
+        <td align = "center">Backend</td>
     </tr>
 </table>
 
-![line-advanced-01](https://user-images.githubusercontent.com/68919333/196175477-3cd0996a-b12e-4413-a4c1-5d739c470dcd.png)
 
 
 
