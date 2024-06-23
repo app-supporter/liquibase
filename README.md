@@ -117,7 +117,7 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 프로젝트에 사용된 모듈은 **`dailyge-API`**, **`admin-API`**, **`storage`**, **`support`** 모듈 입니다. 각 모듈의 기능은 다음과 같습니다. 
 
-1. **`dailyge-API`**: 서비스 API 모듈입니다.
+1. **`dailyge-API`**: 서비스 API 모듈로 입니다.
 2. **`scheduler`**: 스케줄링 모듈입니다.
 3. **`storage`**: 데이터베이스 모듈입니다.
 4. **`support`**: 로깅, 모니터링 등 API 모듈을 지원하는 모듈입니다.
@@ -136,24 +136,11 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 <br/><br/><br/><br/>
 
-모듈간 의존관계는 다음과 같습니다. 불필요한 의존성 제거, 빌드 시간 단축을 위해 위해 Spring Data Jpa를 제외하고는 runtimeOnly 또는 imeimplementation [구성(Configuration)](https://docs.gradle.org/current/userguide/declaring_dependencies.html)을 사용하고 있습니다.
+모듈간 의존관계는 다음과 같습니다. 불필요한 의존성 제거, 빌드 시간 단축을 위해 위해 대체로 runtimeOnly 또는 imeimplementation [구성(Configuration)](https://docs.gradle.org/current/userguide/declaring_dependencies.html)을 사용하고 있습니다.
 
 <br/>
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcHD02o%2FbtsH8G6bEze%2FgkOXvPS5h9ZNeIdKRDl9VK%2Fimg.png)
-
-<br/><br/><br/><br/>
-
-Spring Data Jpa는 imeimplementation을 사용하면 (캡슐화로 인해) 다른 모듈에서 import 할 수 없기 때문에 API를 사용하고 있습니다. 이는 도메인 모델과 영속 모델을 분리할 경우, imeimplementation을 사용할 수 있지만, 도메인 모델로 인해 늘어나는 코드량, 이로 인한 유지보수 비용이 더 크다고 판단해 도입하지 않았습니다.
-
-```java
-dependencies {
-    // JPA
-    API("org.springframework.boot:spring-boot-starter-data-jpa")
-
-    ......
-}
-```
 
 <br/><br/><br/><br/><br/><br/><br/>
 
