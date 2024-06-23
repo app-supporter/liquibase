@@ -173,6 +173,8 @@ core 패키지는 , common 패키지는 프로젝트에서 공통으로 사용�
 
 ```
 
+> 각 계층의 의존도는 다음과 같습니다. Controller(1) --> Facade(2) --> Application(3), External(3) --> Persistence(4). 숫자가 작을수록 하위 계층입니다.  
+
 <br/><br/><br/><br/><br/><br/>
 
 패키지 순환 참조가 발생하지 않도록 주기적으로 패키지 사이클을 관리하고 있습니다. 
