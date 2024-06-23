@@ -4,7 +4,8 @@
   
 <div align="center">
   
-  [📚 스터디 모집, 학습 공유 플랫폼](https://lnshare-study.com/) <br>
+  하루 일정을 관리하자! <br>
+  하루하루가 모여 우리가 원하는 목표를 이룰 수 있다.
 
   [![Release](https://img.shields.io/badge/-📚_API_Docs-brightgreen)]() [![Release](https://img.shields.io/badge/-📚_Team_Blog-blue)]() <br/>
   [![Release](https://img.shields.io/badge/%E2%9C%A8%20release-v1.0.0-brightgreen)]()
