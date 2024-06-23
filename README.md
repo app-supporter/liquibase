@@ -170,9 +170,9 @@ core 패키지는 , common 패키지는 프로젝트에서 공통으로 사용�
 ├─📁 dailyge-API
 │     ......
 │       └─📁 app
-│           ├─📁 common         # 프로젝트 공통 패키지
-│           └─📁 core           # 서비스 API 패키지
-│                 └─📁 user     # 도메인            
+│           ├─📁 common                    # 프로젝트 공통 패키지
+│           └─📁 core                      # 서비스 API 패키지
+│                 └─📁 user                # 도메인
 │                    ├─📁 external         #  외부 시스템 호출 계층       - Optional
 │                    ├─📁 presentation     #  표면 계층(Controller)            
 │                    ├─📁 facade           #  퍼사드 계층(Facade)       - Optional
