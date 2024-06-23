@@ -103,6 +103,8 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 ![image]()
 
+<br/><br/><br/><br/><br/><br/>
+
 # 4. Architecture
 
 서비스 구축을 위해 AWS를 활용했으며, 정적 자원은 S3와 CloudFront를, 서버 오케스트레이션은 AWS ECS를 사용했습니다. 각 리소스는 VPC 내부 별도의 서브넷(Public/Private)에 존재하며, ALB와 NAT를 통해 외부와 통신합니다. 
