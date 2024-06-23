@@ -188,11 +188,13 @@ core 패키지는 , common 패키지는 프로젝트에서 공통으로 사용�
 
 <br/><br/><br/><br/><br/><br/><br/>
 
+https://blog.kakaocdn.net/dn/bnh60B/btsH9fOa0cF/fBhedhfckO4gyijcSMGuAk/img.png
+
 # Contributors
 
 | [Youl](https://github.com/kkk5474096) | [Jun](https://github.com/unam98) | []()| []()|
 | :---: | :---: | :---: |:---: |
-|<img width="200" src="https://github.com/depromeet/TeumTeum-Android/assets/89737271/513cb651-bc4a-4b91-85f3-5090da6cfc4a.jpg">|<img width="200" src="https://avatars.githubusercontent.com/u/92818747?v=4">|<img width="200" src="https://www.creativefabrica.com/wp-content/uploads/2022/03/14/White-Paper-Texture-Background-Graphics-27154875-1-1-580x387.jpg">|<img width="100" src="https://www.creativefabrica.com/wp-content/uploads/2022/03/14/White-Paper-Texture-Background-Graphics-27154875-1-1-580x387.jpg">| 
+|<img width="200" src="https://github.com/depromeet/TeumTeum-Android/assets/89737271/513cb651-bc4a-4b91-85f3-5090da6cfc4a.jpg">|<img width="200" src="https://avatars.githubusercontent.com/u/92818747?v=4">|<img width="200" "src=https://blog.kakaocdn.net/dn/bnh60B/btsH9fOa0cF/fBhedhfckO4gyijcSMGuAk/img.png">|<img width="200" "src=https://blog.kakaocdn.net/dn/bnh60B/btsH9fOa0cF/fBhedhfckO4gyijcSMGuAk/img.png">| 
 |**Backend, Frontend**|**Backend, Infra**| | |
 
 
