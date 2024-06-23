@@ -4,8 +4,8 @@
   
 <div align="center">
   
-  하루 일정을 관리하자! <br>
-  하루하루가 모여 우리가 원하는 목표를 이룰 수 있다.
+  Dailyge로 간편하게 하루 일정 관리를! <br>
+  성실한 하루의 연속이 큰 변화를 만든다.
 
   [![Release](https://img.shields.io/badge/-📚_API_Docs-brightgreen)]() [![Release](https://img.shields.io/badge/-📚_Team_Blog-blue)]() <br/>
   [![Release](https://img.shields.io/badge/%E2%9C%A8%20release-v1.0.0-brightgreen)]()
