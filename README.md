@@ -72,7 +72,7 @@ Backend, Infra, 협업에 사용된 기술 스택/툴은 다음과 같습니다.
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FG9Nmi%2FbtsH9FZOYqq%2FmoUcUwmJZ4Mz9Lxz4LVKc1%2Fimg.png)
 
-> 공개되는 API 문서는 RestDocs를, 개발 서버에는 Swagger + RestDocs를 조합해 사용하고 있습니다. 개발 서버 API 문서는 조회할 수는 있지만 AWS Inbound 룰로 인해 사용할 수는 없습니다.  
+> 공개 API 문서는 RestDocs를, 개발 서버에는 Swagger + RestDocs를 조합해 사용하고 있습니다. 외부인의 경우, [개발 서버 API 문서]()를 조회할 수는 있지만 AWS Inbound 룰로 인해 사용할 수는 없습니다.  
 
 <br/><br/><br/><br/><br/><br/>
 
