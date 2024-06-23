@@ -93,7 +93,7 @@ Backend, Infrastructure, 협업에 사용된 기술 스택/툴은 다음과 같�
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FofFbV%2FbtsH9GLbQKK%2FyJNQ4fKw2DK1VaW6vRbpY1%2Fimg.png)
 
-> 팀 규칙 및 기술 관련 글은 [Gitbook]()을 사용하고 있습니다.
+> 팀 규칙 및 기술 관련 글은 문서 작성의 용이를 위해 [Gitbook]()을 사용하고 있습니다.
 
 <br/><br/><br/><br/><br/><br/><br/>
 
