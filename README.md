@@ -1,7 +1,6 @@
 <div align="center">
   
-![image](https://avatars.githubusercontent.com/u/170791409?s=400&u=dc5c8ff1ff0be4e08bd47e773f94db276f48896d&v=4)
-
+  <img width="600" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FVbllW%2FbtsH955a4cs%2FFNf8S3KK7u2h7L1GtJRKKk%2Fimg.png">
 </div>
   
 <div align="center">
