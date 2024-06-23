@@ -81,7 +81,7 @@ Backend, Infrastructure, 협업에 사용된 기술 스택/툴은 다음과 같�
 
 <br/><br/><br/><br/>
 
-모니터링은 Prometheus와 Grafana를 사용했으며, 운영 로그와 시스템 로그를 별도로 관리하고 있습니다. 운영 로그는 Grafana Loki를, 시스템 로그는 AWS CloudWatch로 관리하고 있으며, 운영 과정에서 발생하는 이슈는 AWS Lambda로 보고받고 있습니다. 
+모니터링은 Prometheus와 Grafana를 사용하고 있으며, 운영 로그와 시스템 로그를 별도로 관리하고 있습니다. 운영 로그는 Grafana Loki를, 시스템 로그는 AWS CloudWatch로 관리하고 있으며, 운영 과정에서 발생하는 이슈는 AWS Lambda로 보고받고 있습니다. 
 
 ![image]()
 
