@@ -55,11 +55,11 @@
 
 <br/><br/><br/><br/><br/><br/><br/>
 
-# 1. 서비스 소개
+# 1. Service Introduction.
 
 <br/><br/><br/><br/><br/><br/><br/>
 
-# 2.사용된 기술
+# 2. Skills.
 
 Backend, Infra, 협업에 사용된 기술 스택/툴은 다음과 같습니다.
 
