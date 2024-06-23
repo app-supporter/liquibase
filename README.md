@@ -1,10 +1,8 @@
 <div align="center">
-  
-  <img width="400" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FVbllW%2FbtsH955a4cs%2FFNf8S3KK7u2h7L1GtJRKKk%2Fimg.png"><br/>
+  <img width="400" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FCl3Zr%2FbtsH9tFrQxe%2F4Wd1nL8FuHANpzi9flDwBK%2Fimg.png"><br/><br/>
 </div>
   
 <div align="center">
-  
   
   [📚 스터디 모집, 학습 공유 플랫폼](https://lnshare-study.com/) <br>
 
