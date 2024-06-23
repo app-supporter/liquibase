@@ -177,7 +177,7 @@ core 패키지는 서비스에 관한 기능을, common 패키지는 프로젝�
 
 ```text
 각 계층의 의존성은 다음과 같습니다. 숫자가 작을수록 하위 계층입니다.
-Controller(1)  -->  Facade(2)  -->  Application(3), External(3)  -->  Persistence(4)
+> Controller(1)  -->  Facade(2)  -->  Application(3), External(3)  -->  Persistence(4)
 ```
 
 <br/><br/><br/><br/><br/><br/>
