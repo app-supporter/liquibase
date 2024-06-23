@@ -192,10 +192,10 @@ https://blog.kakaocdn.net/dn/bnh60B/btsH9fOa0cF/fBhedhfckO4gyijcSMGuAk/img.png
 
 # Contributors
 
-| [Youl](https://github.com/kkk5474096) | [Jun](https://github.com/unam98) | []()| []()|
+| [Youl](https://github.com/kkk5474096) | [Jun](https://github.com/unam98) |
 | :---: | :---: | :---: |:---: |
-|<img width="200" src="https://github.com/depromeet/TeumTeum-Android/assets/89737271/513cb651-bc4a-4b91-85f3-5090da6cfc4a.jpg">|<img width="200" src="https://avatars.githubusercontent.com/u/92818747?v=4">|<img width="200" src="https://blog.kakaocdn.net/dn/bnh60B/btsH9fOa0cF/fBhedhfckO4gyijcSMGuAk/img.png">|<img width="200" src="[https://avatars.githubusercontent.com/u/92818747?v=4](https://blog.kakaocdn.net/dn/bnh60B/btsH9fOa0cF/fBhedhfckO4gyijcSMGuAk/img.png)">|
-|**Backend, Frontend**|**Backend, Infra**|**Backend, Infra**|**Backend, Infra**|
+|<img width="150" src="https://github.com/depromeet/TeumTeum-Android/assets/89737271/513cb651-bc4a-4b91-85f3-5090da6cfc4a.jpg">|<img width="150" src="https://avatars.githubusercontent.com/u/92818747?v=4">|
+|**Backend, Frontend**|**Backend, Infra**|
 
 
 <br/><br/><br/><br/><br/><br/><br/>
