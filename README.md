@@ -79,7 +79,7 @@ Backend, Infra, 협업에 사용된 기술 스택/툴은 다음과 같습니다.
 
 ## ☁️ InfraStructure.
 
-모니터링은 Prometheus와 Grafana를 사용하고 있으며, 운영 로그와 시스템 로그를 별도로 관리하고 있습니다. 운영 로그는 Grafana Loki를, 시스템 로그는 AWS CloudWatch로 관리하고 있으며, 운영 과정에서 발생하는 이슈는 AWS Lambda로 보고받고 있습니다.
+서비스 구축을 위해 AWS를 활용했으며, 모니터링은 Prometheus와 Grafana를 사용하고 있습니다. 운영 로그는 Grafana Loki를, 시스템 로그는 AWS CloudWatch로 관리하고 있으며, 운영 과정에서 발생하는 이슈는 AWS Lambda로 보고받고 있습니다.
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbcU6So%2FbtsH8Nkm8aQ%2FEneyp26AkfimW78whEvwmK%2Fimg.png)
 
@@ -113,7 +113,7 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 # 4. Architecture
 
-서비스 구축을 위해 AWS를 활용했으며, 정적 자원은 S3와 CloudFront를, 서버 오케스트레이션은 AWS ECS를 사용했습니다. 각 리소스는 VPC 내부 별도의 서브넷(Public/Private)에 존재하며, ALB와 NAT를 통해 외부와 통신합니다. 
+정적 자원은 S3와 CloudFront를, 서버 오케스트레이션은 AWS ECS를 사용했습니다. 각 리소스는 VPC 내부 별도의 서브넷(Public/Private)에 존재하며, ALB와 NAT를 통해 외부와 통신합니다. 
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FMJrxl%2FbtsH8D9VGQD%2F3iBRoE6uo58NXsl9e2r260%2Fimg.png)
 
