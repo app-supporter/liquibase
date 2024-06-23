@@ -14,8 +14,6 @@
 
 </div>
 
-![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcCBine%2FbtsH9LsjMp6%2F8pTQavEXDHNYWEFTz2n521%2Fimg.png)
-
 <br/><br/><br/><br/>
 
 <div align="center">
