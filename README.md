@@ -158,7 +158,6 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 core 패키지는 서비스에 관한 기능을, common 패키지는 프로젝트에서 공통으로 사용되는 클래스 또는 설정을 포함하고 있습니다. 상위 계층은 하위 계층에 의존하지 않으며, 하위 계층의 존재를 알지 못합니다.
 
 ```shell
-.
 ├─📁 dailyge-API
 │     ......
 │       └─📁 app
@@ -176,8 +175,10 @@ core 패키지는 서비스에 관한 기능을, common 패키지는 프로젝�
 
 ```
 
-> 각 계층의 의존도는 다음과 같습니다. 숫자가 작을수록 하위 계층입니다. <br/>
-> Controller(1)  -->  Facade(2)  -->  Application(3), External(3)  -->  Persistence(4)
+```text
+각 계층의 의존성은 다음과 같습니다. 숫자가 작을수록 하위 계층입니다.
+Controller(1)  -->  Facade(2)  -->  Application(3), External(3)  -->  Persistence(4)
+```
 
 <br/><br/><br/><br/><br/><br/>
 
