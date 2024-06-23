@@ -169,11 +169,11 @@ core 패키지는 , common 패키지는 프로젝트에서 공통으로 사용�
 │           ├─📁 common                       # 프로젝트 공통 패키지
 │           └─📁 core       
 │             └─📁 user                       # 도메인
-│                ├─📁 external                # 외부 시스템 호출 계층       - Optional
-│                ├─📁 presentation            # 표면 계층(Controller)            
-│                ├─📁 facade                  # 퍼사드 계층(Facade)       - Optional
-│                ├─📁 application             # 서비스 계층(Service)               
-│                └─📁 persistence             # 영속 계층(Repository)            
+│                ├─📁 external                # 외부 시스템 호출 계층         - Optional
+│                ├─📁 presentation            # 표면 계층  
+│                ├─📁 facade                  # 퍼사드 계층                 - Optional
+│                ├─📁 application             # 서비스 계층
+│                └─📁 persistence             # 영속 계층
 └── 
 
 ......
