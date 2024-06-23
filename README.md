@@ -5,7 +5,7 @@
 <div align="center">
   
   Dailyge로 간편하게 하루 일정 관리를! <br>
-  성실한 하루의 연속이 큰 변화를 만든다.
+  🏃 성실한 하루의 연속이 큰 변화를 가져다 준다.
 
   [![Release](https://img.shields.io/badge/-📚_API_Docs-brightgreen)]() [![Release](https://img.shields.io/badge/-📚_Team_Blog-blue)]() <br/>
   [![Release](https://img.shields.io/badge/%E2%9C%A8%20release-v1.0.0-brightgreen)]()
