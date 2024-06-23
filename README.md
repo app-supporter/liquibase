@@ -187,8 +187,6 @@ core 패키지는 서비스에 관한 기능을, common 패키지는 프로젝�
 
 <br/><br/><br/><br/><br/><br/><br/>
 
-https://blog.kakaocdn.net/dn/bnh60B/btsH9fOa0cF/fBhedhfckO4gyijcSMGuAk/img.png
-
 # Contributors
 
 | [Youl](https://github.com/kkk5474096) | [Jun](https://github.com/unam98) |
