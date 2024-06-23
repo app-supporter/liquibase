@@ -86,7 +86,7 @@ Backend, Infra, 협업에 사용된 기술 스택/툴은 다음과 같습니다.
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbcU6So%2FbtsH8Nkm8aQ%2FEneyp26AkfimW78whEvwmK%2Fimg.png)
 
-> 비용 절감을 위해 일부 서버는 Google Cloud 무료 서비스를 활용하고 있습니다. 
+> 비용 절감을 위해 일부 서버는 Google Cloud를 활용하고 있습니다. 
 
 <br/><br/><br/><br/><br/><br/>
 
