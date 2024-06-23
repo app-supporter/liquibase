@@ -55,11 +55,11 @@
 
 <br/><br/><br/><br/><br/><br/><br/>
 
-# 1.서비스 소개.
+# 1. 서비스 소개
 
 <br/><br/><br/><br/><br/><br/><br/>
 
-# 2.사용된 기술.
+# 2.사용된 기술
 
 Backend, Infrastructure, 협업에 사용된 기술 스택/툴은 다음과 같습니다.
 
@@ -97,11 +97,11 @@ Backend, Infrastructure, 협업에 사용된 기술 스택/툴은 다음과 같�
 
 <br/><br/><br/><br/><br/><br/><br/>
 
-# 3.Architecture.
+# 3. Architecture
 
 <br/><br/><br/><br/><br/><br/><br/>
 
-# 🐋 CICD.
+# 4. CICD
 
 PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결과를 보고받습니다. 팀원 간 코드 리뷰를 거친 후, dev 브랜치로 병합이 되면 개발 서버로 배포가 되며, 인수 테스트가 시작됩니다. 자동 인수 테스트 외에도 QA를 진행하며 기능의 동작 유무, 버그 리포팅을 합니다. main 브랜치로 병합이 되면 상용 서버로 배포가 되며, 최종 결과를 보고받습니다.
 
@@ -115,7 +115,7 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 <br/><br/><br/><br/><br/><br/><br/>
 
-# 👨‍👩‍👦 모듈 연관관계
+# 5. 모듈 연관관계
 
 프로젝트에 사용된 모듈은 **`dailyge-API`**, **`admin-API`**, **`storage`**, **`support`** 모듈 입니다. 각 모듈의 기능은 다음과 같습니다. 
 
@@ -159,23 +159,23 @@ dependencies {
 
 <br/><br/><br/><br/><br/><br/><br/>
 
-# 📁 패키지 구조
+# 6. 패키지 구조
 
 core 패키지는 , common 패키지는 프로젝트에서 공통으로 사용되는 . 상위 모듈은 하위 모듈에 의존하지 않으며, 잘 변하지 않는 
 
 ```shell
 .
-├── dailyge-API
+├─📁 dailyge-API
 │     ......
-│       └─ app
-│           ├─ common    # 프로젝트 공통 패키지
-│           └─ core      # 서비스 API 패키지
-│               └─ user     # 도메인            
-│                   ├─ external         #  외부 시스템 호출 계층       - Optional
-│                   ├─ presentation     #  표면 계층(Controller)            
-│                   ├─ facade           #  퍼사드 계층(Facade)       - Optional
-│                   ├─ application      #  서비스 계층(Service)               
-│                   └─ persistence      #  영속 계층(Repository)            
+│       └─📁 app
+│           ├─📁 common         # 프로젝트 공통 패키지
+│           └─📁 core           # 서비스 API 패키지
+│                 └─📁 user     # 도메인            
+│                    ├─📁 external         #  외부 시스템 호출 계층       - Optional
+│                    ├─📁 presentation     #  표면 계층(Controller)            
+│                    ├─📁 facade           #  퍼사드 계층(Facade)       - Optional
+│                    ├─📁 application      #  서비스 계층(Service)               
+│                    └─📁 persistence      #  영속 계층(Repository)            
 └── 
 
 ......
