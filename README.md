@@ -189,12 +189,14 @@ core 패키지는 서비스에 관한 기능을, common 패키지는 프로젝�
 
 # Contributors
 
+<div align="center">
+
 | [Youl](https://github.com/kkk5474096) | [Jun](https://github.com/unam98) |
 | :---: | :---: |
 |<img width="150" src="https://github.com/depromeet/TeumTeum-Android/assets/89737271/513cb651-bc4a-4b91-85f3-5090da6cfc4a.jpg">|<img width="150" src="https://avatars.githubusercontent.com/u/92818747?v=4">|
 |**Backend, Frontend**|**Backend, Infra**|
 
-
+</div>
 <br/><br/><br/><br/><br/><br/><br/>
 
 
