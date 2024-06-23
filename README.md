@@ -139,7 +139,7 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 ├─ 📁storage
 │    ......
 │       └📁 dailyge
-│            └📁 entity   # 영속 모델
+│             └📁 entity   # 영속 모델
 
 ```
 
