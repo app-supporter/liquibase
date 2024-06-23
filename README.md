@@ -75,7 +75,7 @@ Backend, Infrastructure, 협업에 사용된 기술 스택/툴은 다음과 같�
 
 ## ☁️ InfraStructure.
 
-서비스 구축을 위해 AWS를 활용했으며, 정적 자원은 S3와 CloudFront를, 서버 오케스트레이션은 AWS ECS를 사용했습니다. 각 리소스는 VPC 내부 별도의 서브넷(Public/Private)에 존재하며, ALB, NAT를 통해 외부와 통신합니다. 
+서비스 구축을 위해 AWS를 활용했으며, 정적 자원은 S3와 CloudFront를, 서버 오케스트레이션은 AWS ECS를 사용했습니다. 각 리소스는 VPC 내부 별도의 서브넷(Public/Private)에 존재하며, ALB와 NAT를 통해 외부와 통신합니다. 
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FMJrxl%2FbtsH8D9VGQD%2F3iBRoE6uo58NXsl9e2r260%2Fimg.png)
 
