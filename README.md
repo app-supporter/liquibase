@@ -1,6 +1,6 @@
 <div align="center">
   
-  <img width="500" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FVbllW%2FbtsH955a4cs%2FFNf8S3KK7u2h7L1GtJRKKk%2Fimg.png"><br/>
+  <img width="400" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FVbllW%2FbtsH955a4cs%2FFNf8S3KK7u2h7L1GtJRKKk%2Fimg.png"><br/>
 </div>
   
 <div align="center">
