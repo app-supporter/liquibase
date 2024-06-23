@@ -62,9 +62,11 @@
 
 Backend, Infra, 협업에 사용된 기술 스택/툴은 다음과 같습니다.
 
-[1. Backend]()
-[2. Infra]()
-[3. Collaboration]()
+1. [Backend]()
+
+2. [Infra]()
+
+3. [Collaboration]()
 
 <br/><br/><br/>
 
