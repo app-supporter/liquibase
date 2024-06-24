@@ -198,6 +198,5 @@ core 패키지는 서비스에 관한 기능을, common 패키지는 프로젝�
 |**Backend, Frontend**|**Backend, Infra**|
 
 </div>
-<br/><br/><br/><br/><br/><br/><br/>
 
 
