@@ -68,9 +68,17 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 <br/><br/><br/><br/><br/><br/>
 
-테스트, 배포 결과 및 AWS 비용은 슬랙을 통해 확인하고 있습니다.
+테스트, 배포 결과는 슬랙을 통해 확인하고 있습니다.
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F57TWx%2FbtsJdr7XsmA%2FfihnO93ztuKmPq960lSp71%2Fimg.png)
+
+<br/><br/><br/><br/><br/><br/>
+
+# 4. Architecture
+
+정적 자원은 S3와 CloudFront를, 서버 오케스트레이션은 AWS ECS를 사용했습니다. 각 리소스는 VPC 내부 별도의 서브넷(Public/Private)에 존재하며, ALB와 NAT를 통해 외부와 통신합니다.  
+
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FMJrxl%2FbtsH8D9VGQD%2F3iBRoE6uo58NXsl9e2r260%2Fimg.png)
 
 <br/><br/><br/><br/><br/><br/>
 
@@ -87,5 +95,11 @@ Route53에서 WAF로 사용자 최대 사용자 요청을 제한하고 있으며
 <br/><br/><br/><br/>
 
 모니터링 중인 자원은 EC2 서버, 애플리케이션, RDS, Redis, MongoDB 이며, CPU/메모리 사용률, Slow Query 등을 체크하고 있습니다.
+
+![image]()
+
+<br/><br/><br/><br/><br/><br/>
+
+애플리케이션이 다운될 경우, 자동으로 힙 덤프를 뜨며, 이를 외부 저장소로 전송하고 있습니다. 
 
 ![image]()
