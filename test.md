@@ -52,14 +52,6 @@ Dailyge Infra 저장소 입니다.
 
 > 명시적으로 dev, prod 패키지를 나누었지만 규모가 작기 때문에 dev 하나만 사용하고 있으며, 동일 이유로 Atlantis도 사용하지 않았습니다.
 
-<br/><br/><br/><br/>
-
-## 사용된 기술
-
-Terraform을 사용해 자원을 프로비저닝 하며, 일부 자원을 설치형으로 사용하고 있습니다. 
-
-![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbcU6So%2FbtsH8Nkm8aQ%2FEneyp26AkfimW78whEvwmK%2Fimg.png)
-
 <br/><br/><br/><br/><br/><br/>
 
 # 2. Skills.
