@@ -56,9 +56,11 @@ Dailyge Infra 저장소 입니다.
 
 # 2. Skills.
 
-서비스 구축을 위해 AWS를 활용했으며, 모니터링은 Prometheus와 Grafana를 사용하고 있습니다. 운영 로그 및 시스템 로그는 모두 AWS CloudWatch로 관리하고 있으며, 운영 과정에서 발생하는 이슈는 Grafana Alert Rule 또는 AWS Lambda로 보고받고 있습니다. 비용 절감을 위해 일부 서버는 Google Cloud를 활용하고 있습니다. Terraform으로 관리되는 자원은 Route53, CloudFront, S3, ALB, ECS, EC2(Backend), RDS 입니다. 모든 자원을 코드로 관리 하지는 않으며, 일부 자원들은 설치형으로 사용하고 있습니다.
+서비스 구축을 위해 AWS를 활용했으며, 모니터링은 Prometheus와 Grafana를 사용하고 있습니다. 운영 로그 및 시스템 로그는 모두 AWS CloudWatch로 관리하고 있으며, 운영 과정에서 발생하는 이슈는 Grafana Alert Rule 또는 AWS Lambda로 보고받고 있습니다. Terraform으로 관리되는 자원은 Route53, CloudFront, S3, ALB, ECS, EC2(Backend), RDS 입니다. 모든 자원을 코드로 관리 하지는 않으며, 일부 자원들은 설치형으로 사용하고 있습니다.
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbcU6So%2FbtsH8Nkm8aQ%2FEneyp26AkfimW78whEvwmK%2Fimg.png)
+
+> 비용 절감을 위해 일부 서버는 Google Cloud를 활용하고 있습니다. 
 
 <br/><br/><br/><br/><br/><br/>
 
