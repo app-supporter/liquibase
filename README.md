@@ -176,3 +176,41 @@ core 패키지는 서비스에 관한 기능을, common 패키지는 프로젝�
 </div>
 
 
+<br/><br/><br/><br/><br/><br/><br/>
+
+
+# Dailyge Infra
+
+Dailyge Infra 저장소 입니다. 
+
+
+
+<br/><br/><br/><br/>
+
+## 패키지 구조
+
+Terraform으로 관리되는 자원은 Route53, CloudFront, S3, ALB, ECS, EC2(Backend), RDS 입니다. 일부 자원들은 **`설치형`** 으로 사용하고 있습니다.
+
+```shell
+├─ README.md
+├─ main.tf
+├─ 📁modules                  # Modules
+│       ├─📁 cloudfront       # Resource
+│       │    └── ......
+│       ├─📁 s3
+│       │    └── ......
+│       └─📁 vpc
+│           ├─ main.tf        # main.tf
+│           ├─ output.tf      # output.tf
+│           └─ variables.tf   # variables.tf
+├── variable.tf
+└── variables.tf
+```
+
+> 명시적으로 dev, prod 패키지를 나누었지만 규모가 작기 때문에 dev 하나만 사용하고 있으며, 동일 이유로 Atlantis는 사용하지 않았습니다.
+
+<br/><br/><br/><br/>
+
+## 사용된 기술
+
+
