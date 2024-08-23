@@ -34,6 +34,8 @@ Dailyge Infra 저장소 입니다.
 
 ## 패키지 구조
 
+modules 내부에 개발 환경을 기준으로 파일을 구분하고 있습니다. 명시적으로 dev, prod 패키지를 나누었지만 프로젝트 규모가 작기 때문에 dev 하나만 사용하고 있습니다. 
+
 ```shell
 ├─ README.md
 ├─ main.tf
@@ -50,7 +52,7 @@ Dailyge Infra 저장소 입니다.
 └── variables.tf
 ```
 
-> 명시적으로 dev, prod 패키지를 나누었지만 규모가 작기 때문에 dev 하나만 사용하고 있으며, 동일 이유로 Atlantis도 사용하지 않았습니다.
+> Atlantis는 별도의 서버가 필요하기 때문에, 프로젝트 규모를 고려해 사용하지 않았습니다.
 
 <br/><br/><br/><br/><br/><br/>
 
