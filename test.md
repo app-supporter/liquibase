@@ -1,8 +1,6 @@
 
 # Dailyge Infra
 
-Dailyge Infra 저장소 입니다. 
-
 <div align="center">
   <img width="400" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FCl3Zr%2FbtsH9tFrQxe%2F4Wd1nL8FuHANpzi9flDwBK%2Fimg.png"><br/><br/>
 </div>
