@@ -61,7 +61,7 @@ Java/SpringBoot를 사용해 애플리케이션을 구축했습니다. Liquibase
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FRUR1K%2FbtsJebYQ9S7%2Fpr8dSua2YHDtpnNlQ6bdR1%2Fimg.png)
 
-> 인프라에 대한 상세한 내용은 [해당 링크](https://github.com/dailyge/dailyge-infra)를 참조해주세요.
+> 인프라에 대한 상세한 내용은 [해당 링크](https://github.com/dailyge/dailyge-infra)를 참조해주세요.
 
 <br/><br/><br/><br/><br/><br/>
 
@@ -79,11 +79,7 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fr93f9%2FbtsH8AyHS2Z%2FGkQyAVeysys35m6sR5fhA1%2Fimg.png)
 
-<br/><br/><br/><br/><br/><br/>
-
-테스트 코드를 작성하지 않거나 테스트가 실패하는 경우, 또는 테스트 커버리지를 충족하지 못하면 빌드가 실패하게 됩니다. 테스트를 통과하더라도 코드 레벨에서 알 수 없는 이슈를 발견하기 위해 개발서버에서 QA를 진행합니다. 
-
-![image]()
+> 테스트 코드를 작성하지 않거나 테스트가 실패하는 경우, 또는 테스트 커버리지를 충족하지 못하면 빌드가 실패하게 됩니다. 개발서버에서 QA를 진행해 코드 레벨에서 발견할 수 없는 버그를 한 번 더 검증합니다. 
 
 <br/><br/><br/><br/><br/><br/>
 
