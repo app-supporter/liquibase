@@ -64,13 +64,9 @@ Route53에서 WAF로 일정 시간 동안 최대 사용자 요청을 제한하�
 
 모니터링은 Prometheus와 Grafana를 CloudWatch와 연동해 사용하고 있으며, 이를 통해 알림을 받고 있습니다. 모니터링 중인 리소스는 EC2 서버, 애플리케이션 지표, RDS, Redis, MongoDB 이며, CPU/메모리 사용률, Slow Query 등을 체크하고 있습니다.
 
-![image]()
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FeEeYh0%2FbtsJfPz2TdW%2FDD2Zu0zqkZfkljdEFs7960%2Fimg.png)
 
-<br/><br/><br/><br/>
-
-애플리케이션이 다운될 경우, 자동으로 힙 덤프를 뜬 후, 이를 정적 저장소로 업로드하고 알림을 보내고 있습니다.
-
-![image]()
+> 애플리케이션이 다운될 경우, 자동으로 힙 덤프를 뜬 후, 이를 정적 저장소로 업로드하고 알림을 보내고 있습니다.
 
 <br/><br/><br/><br/><br/><br/>
 
