@@ -75,26 +75,25 @@ Route53에서 WAF로 일정 시간 동안 최대 사용자 요청을 제한하�
 modules 내부에 개발 환경을 기준으로 파일을 구분하고 있습니다. 명시적으로 dev, prod 패키지를 나누었지만 프로젝트 규모가 작기 때문에 dev 하나만 사용하고 있습니다. 
 
 ```shell
-├─ README.md
-├─ main.tf
-├─ 📁modules                  # Modules
-│       ├─📁 cloudfront       # Resource
-│       │    └── ......
-│       ├─📁 s3
-│       │    └── ......
-│       └─📁 vpc
-│           ├─ main.tf        # main.tf
-│           ├─ output.tf      # output.tf
-│           └─ variables.tf   # variables.tf
-├── variable.tf
-└── variables.tf
+$ tree -L 5
+.
+├── dev
+│   ├── graph.png
+│   ├── main.tf
+│   ├── modules
+│   │   ├── acm
+│   │   ├── cloudfront
+│   │   │   ├── main.tf
+│   │   │   ├── outputs.tf
+│   │   │   └── variables.tf
+|
+│   ......
+|
+│   ├── provider.tf
+│   └── variables.tf
+
+     ......
+
 ```
 
 > Atlantis는 별도의 서버가 필요하기 때문에, 프로젝트 규모를 고려해 사용하지 않았습니다.
-
-
-<br/><br/><br/><br/><br/><br/>
-
-애플리케이션이 다운될 경우, 자동으로 힙 덤프를 뜨며, 이를 외부 저장소로 전송하고 있습니다. 
-
-![image]()
