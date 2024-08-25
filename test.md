@@ -30,7 +30,7 @@ Dailyge Infra 저장소 입니다.
 
 서비스 구축을 위해 AWS를 활용했으며, Terraform을 사용해 자원을 프로비저닝 했습니다. Terraform으로 관리되는 자원은 Route53, CloudFront, S3, ALB, ECS, EC2(Application), RD 이며, 일부 자원들은 설치형으로 사용하고 있습니다. 모니터링은 Prometheus와 Grafana를 사용하고 있으며, 운영 및 시스템 로그는 모두 AWS CloudWatch로 관리하고 있습니다. 운영 과정에서 발생하는 이슈는 Grafana Alert 또는 AWS Lambda를 통해 슬랙으로 보고받고 있습니다.
 
-![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbcU6So%2FbtsH8Nkm8aQ%2FEneyp26AkfimW78whEvwmK%2Fimg.png)
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FY5ifk%2FbtsJeVnHEJH%2FyQlxRPikUxlOzPKbyUs2Fk%2Fimg.png)
 
 <br/><br/><br/><br/><br/><br/>
 
@@ -52,7 +52,7 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 정적 자원은 S3와 CloudFront를, 서버 오케스트레이션은 AWS ECS를 사용했습니다. 각 리소스는 VPC 내부 별도의 서브넷(Public/Private)에 존재하며, ALB와 NAT를 통해 외부와 통신합니다.  
 
-![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FMJrxl%2FbtsH8D9VGQD%2F3iBRoE6uo58NXsl9e2r260%2Fimg.png)
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdsaShw%2FbtsJemzlzQi%2FfmxkJnzC00ay1kAkxcZir1%2Fimg.png)
 
 <br/><br/><br/><br/><br/><br/>
 
