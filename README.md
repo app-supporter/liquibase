@@ -49,9 +49,9 @@ Backend, Infra, 협업에 사용된 기술 스택/툴은 다음과 같습니다.
 
 ## 🖥️ Backend.
 
-![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FG9Nmi%2FbtsH9FZOYqq%2FmoUcUwmJZ4Mz9Lxz4LVKc1%2Fimg.png)
+Java/SpringBoot를 사용해 애플리케이션을 구축했습니다. Liquibase로 데이터베이스 스키마를 추적하고 있으며, 공개 API 문서는 RestDocs를, 개발 서버에는 Swagger + RestDocs를 조합해 사용하고 있습니다.
 
-> 공개 API 문서는 RestDocs를, 개발 서버에는 Swagger + RestDocs를 조합해 사용하고 있습니다. 외부인의 경우, [개발 서버 API 문서]()를 조회할 수는 있지만 AWS Inbound 룰로 인해 사용할 수는 없습니다.  
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FG9Nmi%2FbtsH9FZOYqq%2FmoUcUwmJZ4Mz9Lxz4LVKc1%2Fimg.png)
 
 <br/><br/><br/><br/><br/><br/>
 
@@ -59,20 +59,17 @@ Backend, Infra, 협업에 사용된 기술 스택/툴은 다음과 같습니다.
 
 서비스 구축을 위해 AWS를 활용했으며, 모니터링은 Prometheus와 Grafana를 사용하고 있습니다. 운영 로그는 Grafana Loki, 시스템 로그는 AWS CloudWatch로 관리하고 있으며, 운영 과정에서 발생하는 이슈는 AWS Lambda로 보고받고 있습니다. 비용 절감을 위해 일부 서버는 Google Cloud를 활용하고 있습니다.
 
-![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbcU6So%2FbtsH8Nkm8aQ%2FEneyp26AkfimW78whEvwmK%2Fimg.png)
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FRUR1K%2FbtsJebYQ9S7%2Fpr8dSua2YHDtpnNlQ6bdR1%2Fimg.png)
 
-> 모니터링 및 로깅에 대한 상세한 내용은 [해당 링크]()를 참조해주세요.
-
+> 인프라에 대한 상세한 내용은 [해당 링크](https://github.com/dailyge/dailyge-infra)를 참조해주세요.
 
 <br/><br/><br/><br/><br/><br/>
 
 ## 👬 Collaboration.
 
-협업 툴은 이슈 트래킹을 위해 Jira/Confluencer를, 자동화 툴은 Zapier와 GitAction을 사용하고 있습니다. 팀원 간 커뮤니케이션은 Slack으로 이루어지며, 또한 CICD 과정에서 발생한 리포트, AWS 비용 결과도 Slack으로 보고 받고 있습니다. 팀원 간 코드 컨벤션 관리 및 코드 스멜 제거를 위해 CheckStlye, PMD, SpotBugs, Sonarqube, Codev와 같은 정적 코드 분석 툴을 도입했습니다. 
+협업 툴은 이슈 트래킹을 위해 Jira/Confluencer를, 자동화 툴은 Zapier와 GitAction을 사용하고 있습니다. 팀원 간 커뮤니케이션은 Slack으로 이루어지며, 또한 CICD 과정에서 발생한 리포트, AWS 비용 결과도 Slack으로 보고 받고 있습니다. 팀원 간 코드 컨벤션 관리 및 코드 스멜 제거를 위해 CheckStlye, PMD, SonarCloud와 같은 정적 코드 분석 툴을 사용하고 있습니다.
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FS4C8q%2FbtsIaFkRVfB%2FLL4VJpYGVJZLMKi6h5yed1%2Fimg.png)
-
-> 팀 규칙 및 기술 관련 글은 문서 관리의 용이성을 위해 [Gitbook]()을 사용하고 있습니다.
 
 <br/><br/><br/><br/><br/><br/><br/>
 
@@ -94,18 +91,18 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 정적 자원은 S3와 CloudFront를, 서버 오케스트레이션은 AWS ECS를 사용했습니다. 각 리소스는 VPC 내부 별도의 서브넷(Public/Private)에 존재하며, ALB와 NAT를 통해 외부와 통신합니다. 
 
-![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FMJrxl%2FbtsH8D9VGQD%2F3iBRoE6uo58NXsl9e2r260%2Fimg.png)
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FRUR1K%2FbtsJebYQ9S7%2Fpr8dSua2YHDtpnNlQ6bdR1%2Fimg.png)
 
 <br/><br/><br/><br/><br/><br/><br/>
 
 # 5. Module
 
-프로젝트에 사용된 모듈은 **`dailyge-API`**, **`admin-API`**, **`storage`**, **`support`** 모듈 입니다. 각 모듈의 기능은 다음과 같습니다. 
+프로젝트에 사용된 모듈은 **`admin-api`**, **`dailyge-api`**, **`storage`**, **`support`** 모듈 입니다. 각 모듈의 기능은 다음과 같습니다. 
 
-1. **`dailyge-API`**: 서비스 API 모듈로 입니다.
-2. **`scheduler`**: 스케줄링 모듈입니다.
-3. **`storage`**: 데이터베이스 모듈입니다.
-4. **`support`**: 로깅, 모니터링 등 API 모듈을 지원하는 모듈입니다.
+1. admin-api: 관리자 API 모듈로 입니다.
+2. dailyge-api: 서비스 API 모듈로 입니다.
+4. storage: 데이터베이스 모듈입니다.
+5. support 로깅, 모니터링 등 API 모듈을 지원하는 모듈입니다.
 
 <br/><br/><br/><br/>
 
@@ -152,8 +149,8 @@ core 패키지는 서비스에 관한 기능을, common 패키지는 프로젝�
 ```
 
 ```text
-각 계층의 의존성은 다음과 같습니다. 숫자가 작을수록 하위 계층입니다.
-> Controller(1)  -->  Facade(2)  -->  Application(3), External(3)  -->  Persistence(4)
+각 계층의 의존성은 다음과 같습니다.
+> Controller  -->  Facade  -->  Application, External  -->  Persistence
 ```
 
 <br/><br/><br/><br/><br/><br/>
@@ -174,102 +171,3 @@ core 패키지는 서비스에 관한 기능을, common 패키지는 프로젝�
 |**Backend, Frontend**|**Backend, Infra**|
 
 </div>
-
-
-<br/><br/><br/><br/><br/><br/><br/>
-
-
-# Dailyge Infra
-
-Dailyge Infra 저장소 입니다. 
-
-<div align="center">
-  <img width="400" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FCl3Zr%2FbtsH9tFrQxe%2F4Wd1nL8FuHANpzi9flDwBK%2Fimg.png"><br/><br/>
-</div>
-  
-<div align="center">
-  
-  Dailyge로 하루 일정 관리를 간편하게! <br>
-  🏃 성실한 하루의 연속이 큰 변화를 가져옵니다.
-
-  [![Release](https://img.shields.io/badge/-📚_API_Docs-brightgreen)]() [![Release](https://img.shields.io/badge/-📚_Team_Blog-blue)]() <br/>
-  [![Release](https://img.shields.io/badge/%E2%9C%A8%20release-v1.0.0-brightgreen)]()
-  [![Release](https://img.shields.io/badge/%E2%9C%A8%20release-v1.0.0-brightgreen)]()
-
-</div>
-
-<br/><br/><br/><br/><br/><br/>
-
-# 1. Table of Contents.
-
-1. 서비스 소개
-2. Skills
-3. CICD
-4. Architecture
-5. Moduels
-6. Package
-
-
-<br/><br/><br/><br/>
-
-## 패키지 구조
-
-Terraform으로 관리되는 자원은 Route53, CloudFront, S3, ALB, ECS, EC2(Backend), RDS 입니다. 모든 자원을 프로비저닝 하지는 않으며, 일부 자원들은 설치형 으로 사용하고 있습니다.
-
-```shell
-├─ README.md
-├─ main.tf
-├─ 📁modules                  # Modules
-│       ├─📁 cloudfront       # Resource
-│       │    └── ......
-│       ├─📁 s3
-│       │    └── ......
-│       └─📁 vpc
-│           ├─ main.tf        # main.tf
-│           ├─ output.tf      # output.tf
-│           └─ variables.tf   # variables.tf
-├── variable.tf
-└── variables.tf
-```
-
-> 명시적으로 dev, prod 패키지를 나누었지만 규모가 작기 때문에 dev 하나만 사용하고 있으며, 동일 이유로 Atlantis도 사용하지 않았습니다.
-
-<br/><br/><br/><br/>
-
-## 사용된 기술
-
-Terraform을 사용해 자원을 프로비저닝 하며, 일부 자원을 설치형으로 사용하고 있습니다. 
-
-![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbcU6So%2FbtsH8Nkm8aQ%2FEneyp26AkfimW78whEvwmK%2Fimg.png)
-
-<br/><br/><br/><br/><br/><br/>
-
-# 3. CICD
-
-PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결과를 보고받습니다. 팀원 간 코드 리뷰를 거친 후, dev 브랜치로 병합이 되면 개발 서버로 배포가 되며, 인수 테스트가 시작됩니다. 자동 인수 테스트 외에도 QA를 진행하며 기능의 동작 유무, 버그 리포팅을 합니다. main 브랜치로 병합이 되면 상용 서버로 배포가 되며, 최종 결과를 보고받습니다.
-
-![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fr93f9%2FbtsH8AyHS2Z%2FGkQyAVeysys35m6sR5fhA1%2Fimg.png)
-
-<br/><br/><br/><br/><br/><br/>
-
-테스트, 배포 결과 및 AWS 비용은 슬랙을 통해 확인하고 있습니다.
-
-![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F57TWx%2FbtsJdr7XsmA%2FfihnO93ztuKmPq960lSp71%2Fimg.png)
-
-<br/><br/><br/><br/><br/><br/>
-
-Route53에서 WAF로 사용자 최대 사용자 요청을 제한하고 있으며, 모니터링 서버, 관리자 API 등 특정 리소스에 대한 접근은 ALB와 WAF, Security Group으로 제한하고 있습니다.
-
-![image]()
-
-<br/><br/><br/><br/><br/><br/>
-
-모니터링은 Prometheus와 Grafana를 CloudWatch와 연동해 사용하고 있으며, 이를 통해 알림을 받고 있습니다. 
-
-![image]()
-
-<br/><br/><br/><br/>
-
-모니터링 중인 자원은 EC2 서버, 애플리케이션, RDS, Redis, MongoDB 이며, CPU/메모리 사용률, Slow Query 등을 체크하고 있습니다.
-
-![image]()
