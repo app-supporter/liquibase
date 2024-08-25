@@ -93,9 +93,9 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 # 5. Module
 
-프로젝트에 사용된 모듈은 **`admin-api`**, **`dailyge-api`**, **`storage`**, **`support`** 모듈 입니다. 각 모듈의 기능은 다음과 같습니다. 
+프로젝트에 사용된 모듈은 **`admin-api`**, **`dailyge-api`**, **`storage`**, **`support`** 모듈 입니다. 각 모듈의 기능은 다음과 같습니다. 
 
-1. admin-api: 관리자 API 모듈로 입니다.
+1. admin-api: 관리자 API 모듈로 입니다.
 2. dailyge-api: 서비스 API 모듈로 입니다.
 4. storage: 데이터베이스 모듈입니다.
 5. support 로깅, 모니터링 등 API 모듈을 지원하는 모듈입니다.
