@@ -88,13 +88,13 @@ Java/SpringBoot를 사용해 애플리케이션을 구축했습니다. Liquibase
 
 협업 툴은 이슈 트래킹을 위해 Jira/Confluencer를, 자동화 툴은 Zapier와 AWS EventBridge, Lambda, SNS/SQS를 사용하고 있습니다. 팀원 간 커뮤니케이션은 Slack으로 이루어지며, 또한 CICD 과정에서 발생한 리포트, AWS 비용 결과도 Slack으로 보고 받고 있습니다. 팀원 간 코드 컨벤션 관리 및 코드 스멜 제거를 위해 CheckStlye, PMD, SonarCloud와 같은 정적 코드 분석 툴을 사용하고 있습니다.
 
-![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fl2pkf%2FbtsJd9tyhbM%2FvEkghskriwATuz7kFAl5x0%2Fimg.png)
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb7h7Xw%2FbtsJniCWIXE%2FhKO3sUXR9X4Oq4E30LXu00%2Fimg.png)
 
 <br/><br/><br/><br/><br/><br/><br/>
 
 # 4. CICD
 
-PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결과를 보고받습니다. 팀원 간 코드 리뷰를 거친 후, dev 브랜치로 병합이 되면 개발 서버로 배포가 되며, 인수 테스트가 시작됩니다. 이후 QA를 진행하며 기능의 동작 유무, 버그 리포팅을 하며, main 브랜치로 병합이 되면 상용 서버로 배포가 되고 최종 결과를 보고받습니다.
+PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결과를 보고받습니다. 팀원 간 코드 리뷰를 거친 후, dev 브랜치로 병합이 되면, 개발 서버로 배포가 되며, 인수 테스트가 시작됩니다. 이후 QA를 진행하며 기능의 동작 유무, 버그 리포팅을 합니다. 마지막으로 main 브랜치로 병합이 되면 상용 서버로 배포가 되고 최종 결과를 보고받습니다.
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FN1QMI%2FbtsJm6v06aM%2FuoKarw39V591Ii8FFUTk2k%2Fimg.png)
 
