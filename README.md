@@ -17,7 +17,7 @@ Dailyge로 일정 관리를 간편하게! <br>
 
 <br/><br/><br/><br/><br/><br/>
 
-# 1. Table of Contents.
+# Table of Contents.
 
 1. 서비스 소개
 2. Skills
