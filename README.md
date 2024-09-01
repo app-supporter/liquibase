@@ -1,3 +1,5 @@
+<br/><br/>
+
 <div align="center">
   <img width="400" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FCl3Zr%2FbtsH9tFrQxe%2F4Wd1nL8FuHANpzi9flDwBK%2Fimg.png"><br/><br/>
 </div>
@@ -161,9 +163,9 @@ core 패키지는 서비스에 관한 기능을, common 패키지는 프로젝�
 
 <div align="center">
 
-| [Youl](https://github.com/kkk5474096) | [Jun](https://github.com/unam98) |
-| :---: | :---: |
-|<img width="150" src="https://github.com/depromeet/TeumTeum-Android/assets/89737271/513cb651-bc4a-4b91-85f3-5090da6cfc4a.jpg">|<img width="150" src="https://avatars.githubusercontent.com/u/92818747?v=4">|
-|**Backend, Frontend**|**Backend, Infra**|
+| [Youl](https://github.com/beatmeJY) | [Jun](https://github.com/devjun10) | [Yui](https://github.com/kmularise) |
+| :---: | :---: | :---: |
+|<img width="150" src="https://avatars.githubusercontent.com/u/54700818?v=4">|<img width="150" src="https://avatars.githubusercontent.com/u/92818747?v=4">|<img width="150" src="https://avatars.githubusercontent.com/u/106499310?v=4">|
+|**Backend, Frontend**|**Backend, Infra**|**Backend**|
 
 </div>
