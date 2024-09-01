@@ -20,12 +20,13 @@ Dailyge로 일정 관리를 간편하게! <br>
 # Table of Contents.
 
 1. 서비스 소개
-2. Skills
-3. CICD
-4. Architecture
-5. Monitoring
-6. Moduels
-7. Package
+2. Contents
+3. Skills
+4. CICD
+5. Architecture
+6. Monitoring
+7. Moduels
+8. Package
 
 <br/><br/><br/><br/><br/><br/><br/>
 
@@ -39,15 +40,21 @@ Dailyge는 일정을 체계적으로 관리하고 하루를 효과적으로 계�
 
 <br/><br/><br/><br/><br/><br/><br/>
 
-# 2. Skills.
+# 2. Contents.
+
+
+
+<br/><br/><br/><br/><br/><br/><br/>
+
+# 3. Skills.
 
 Backend, Infra, 협업에 사용된 기술 스택/툴은 다음과 같습니다.
 
-1. Backend
+- Backend
 
-2. Infra
+- Infra
 
-3. Collaboration
+- Collaboration
 
 <br/><br/><br/>
 
@@ -71,13 +78,13 @@ Java/SpringBoot를 사용해 애플리케이션을 구축했습니다. Liquibase
 
 ## 👬 Collaboration.
 
-협업 툴은 이슈 트래킹을 위해 Jira/Confluencer를, 자동화 툴은 Zapier와 GitAction을 사용하고 있습니다. 팀원 간 커뮤니케이션은 Slack으로 이루어지며, 또한 CICD 과정에서 발생한 리포트, AWS 비용 결과도 Slack으로 보고 받고 있습니다. 팀원 간 코드 컨벤션 관리 및 코드 스멜 제거를 위해 CheckStlye, PMD, SonarCloud와 같은 정적 코드 분석 툴을 사용하고 있습니다.
+협업 툴은 이슈 트래킹을 위해 Jira/Confluencer를, 자동화 툴은 Zapier와 AWS EventBridge, Lambda, SNS/SQS를 사용하고 있습니다. 팀원 간 커뮤니케이션은 Slack으로 이루어지며, 또한 CICD 과정에서 발생한 리포트, AWS 비용 결과도 Slack으로 보고 받고 있습니다. 팀원 간 코드 컨벤션 관리 및 코드 스멜 제거를 위해 CheckStlye, PMD, SonarCloud와 같은 정적 코드 분석 툴을 사용하고 있습니다.
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fl2pkf%2FbtsJd9tyhbM%2FvEkghskriwATuz7kFAl5x0%2Fimg.png)
 
 <br/><br/><br/><br/><br/><br/><br/>
 
-# 3. CICD
+# 4. CICD
 
 PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결과를 보고받습니다. 팀원 간 코드 리뷰를 거친 후, dev 브랜치로 병합이 되면 개발 서버로 배포가 되며, 인수 테스트가 시작됩니다. 자동 인수 테스트 외에도 QA를 진행하며 기능의 동작 유무, 버그 리포팅을 합니다. main 브랜치로 병합이 되면 상용 서버로 배포가 되며, 최종 결과를 보고받습니다.
 
@@ -87,7 +94,7 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 <br/><br/><br/><br/><br/><br/>
 
-# 4. Architecture
+# 5. Architecture
 
 정적 자원은 S3와 CloudFront를, 서버 오케스트레이션은 AWS ECS를 사용했습니다. 각 리소스는 VPC 내부 별도의 서브넷(Public/Private)에 존재하며, ALB와 NAT를 통해 외부와 통신합니다. 부하 테스트를 할 때는 terraform을 통해 서버를 동적으로 확장하고 있으며, 평상시에는 최소 인스턴스만 사용하고 있습니다.
 
@@ -95,7 +102,7 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 <br/><br/><br/><br/><br/><br/><br/>
 
-# 5. Monitoring
+# 6. Monitoring
 
 모니터링은 Prometheus와 Grafana를 CloudWatch와 연동해 사용하고 있으며, 이를 통해 알림을 받고 있습니다. 모니터링 중인 리소스는 EC2 서버, 애플리케이션 지표, RDS, Redis, MongoDB 이며, CPU/메모리 사용률, Slow Query 등을 체크하고 있습니다.
 
@@ -103,7 +110,7 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 <br/><br/><br/><br/><br/><br/><br/>
 
-# 6. Module
+# 7. Module
 
 프로젝트에 사용된 모듈은 **`admin-api`**, **`dailyge-api`**, **`storage`**, **`support`** 모듈 입니다. 각 모듈의 기능은 다음과 같습니다. 
 
@@ -134,7 +141,7 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 <br/><br/><br/><br/><br/><br/><br/>
 
-# 7. Package
+# 8. Package
 
 core 패키지는 서비스에 관한 기능을, common 패키지는 프로젝트에서 공통으로 사용되는 클래스 또는 설정을 포함하고 있습니다. 상위 계층은 하위 계층에 의존하지 않으며, 하위 계층의 존재를 알지 못합니다.
 
