@@ -47,6 +47,7 @@ Dailyge는 일정을 체계적으로 관리하고 하루를 효과적으로 계�
 - [JWT 토큰이 탈취 당한경우, 어떻게 해야 할까?](https://github.com/dailyge/dailyge-server/pull/33)
 - [도메인 간, 쿠키가 공유되지 않을 때, 어떻게 해야 할까?](https://github.com/dailyge/dailyge-server/discussions/105)
 - [JWT 토큰의 필드를 암호화하면 어떤 이점이 있고, 어떤 알고리즘이 사용될까?](https://github.com/dailyge/dailyge-server/discussions/122)
+- [도메인 간, 쿠키가 공유되지 않을 때, 어떻게 해야 할까?](https://github.com/dailyge/dailyge-server/discussions/105)
 - [데이터 압축하면 어떤 이점이 있을까? (feat.레디스)](https://github.com/dailyge/dailyge-server/discussions/86)
 - [부하 테스트를 할 때, 톰캣의 어떤 설정들을 고려해야 할까?](https://github.com/dailyge/dailyge-server/discussions/84)
 - [부하 테스트 과정에서 어떤 지표들을 모니터링 해야 할까?](https://github.com/dailyge/dailyge-server/discussions/82)
@@ -93,7 +94,7 @@ Java/SpringBoot를 사용해 애플리케이션을 구축했습니다. Liquibase
 
 # 4. CICD
 
-PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결과를 보고받습니다. 팀원 간 코드 리뷰를 거친 후, dev 브랜치로 병합이 되면 개발 서버로 배포가 되며, 인수 테스트가 시작됩니다. 자동 인수 테스트 외에도 QA를 진행하며 기능의 동작 유무, 버그 리포팅을 합니다. main 브랜치로 병합이 되면 상용 서버로 배포가 되며, 최종 결과를 보고받습니다.
+PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결과를 보고받습니다. 팀원 간 코드 리뷰를 거친 후, dev 브랜치로 병합이 되면 개발 서버로 배포가 되며, 인수 테스트가 시작됩니다. 이후 QA를 진행하며 기능의 동작 유무, 버그 리포팅을 하며, main 브랜치로 병합이 되면 상용 서버로 배포가 되고 최종 결과를 보고받습니다.
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FN1QMI%2FbtsJm6v06aM%2FuoKarw39V591Ii8FFUTk2k%2Fimg.png)
 
