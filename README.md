@@ -94,7 +94,7 @@ Java/SpringBoot를 사용해 애플리케이션을 구축했습니다. Liquibase
 
 PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결과를 보고받습니다. 팀원 간 코드 리뷰를 거친 후, dev 브랜치로 병합이 되면 개발 서버로 배포가 되며, 인수 테스트가 시작됩니다. 자동 인수 테스트 외에도 QA를 진행하며 기능의 동작 유무, 버그 리포팅을 합니다. main 브랜치로 병합이 되면 상용 서버로 배포가 되며, 최종 결과를 보고받습니다.
 
-![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fr93f9%2FbtsH8AyHS2Z%2FGkQyAVeysys35m6sR5fhA1%2Fimg.png)
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FN1QMI%2FbtsJm6v06aM%2FuoKarw39V591Ii8FFUTk2k%2Fimg.png)
 
 > 테스트 코드를 작성하지 않거나 테스트가 실패하는 경우, 또는 테스트 커버리지를 충족하지 못하면 빌드가 실패하게 됩니다. 개발서버에서 QA를 진행해 코드 레벨에서 발견할 수 없는 버그를 한 번 더 검증합니다. 
 
