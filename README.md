@@ -23,9 +23,9 @@ Dailyge로 일정 관리를 간편하게! <br>
 2. Skills
 3. CICD
 4. Architecture
-5. Moduels
-6. Package
-
+5. Monitoring
+6. Moduels
+7. Package
 
 <br/><br/><br/><br/><br/><br/><br/>
 
@@ -87,20 +87,28 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 # 4. Architecture
 
-정적 자원은 S3와 CloudFront를, 서버 오케스트레이션은 AWS ECS를 사용했습니다. 각 리소스는 VPC 내부 별도의 서브넷(Public/Private)에 존재하며, ALB와 NAT를 통해 외부와 통신합니다. 
+정적 자원은 S3와 CloudFront를, 서버 오케스트레이션은 AWS ECS를 사용했습니다. 각 리소스는 VPC 내부 별도의 서브넷(Public/Private)에 존재하며, ALB와 NAT를 통해 외부와 통신합니다. 부하 테스트를 할 때는 terraform을 통해 서버를 동적으로 확장하고 있으며, 평상시에는 최소 인스턴스만 사용하고 있습니다.
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FRUR1K%2FbtsJebYQ9S7%2Fpr8dSua2YHDtpnNlQ6bdR1%2Fimg.png)
 
 <br/><br/><br/><br/><br/><br/><br/>
 
-# 5. Module
+# 5. Monitoring
+
+모니터링은 Prometheus와 Grafana를 CloudWatch와 연동해 사용하고 있으며, 이를 통해 알림을 받고 있습니다. 모니터링 중인 리소스는 EC2 서버, 애플리케이션 지표, RDS, Redis, MongoDB 이며, CPU/메모리 사용률, Slow Query 등을 체크하고 있습니다.
+
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FeEeYh0%2FbtsJfPz2TdW%2FDD2Zu0zqkZfkljdEFs7960%2Fimg.png)
+
+<br/><br/><br/><br/><br/><br/><br/>
+
+# 6. Module
 
 프로젝트에 사용된 모듈은 **`admin-api`**, **`dailyge-api`**, **`storage`**, **`support`** 모듈 입니다. 각 모듈의 기능은 다음과 같습니다. 
 
-1. admin-api: 관리자 API 모듈로 입니다.
-2. dailyge-api: 서비스 API 모듈로 입니다.
-4. storage: 데이터베이스 모듈입니다.
-5. support 로깅, 모니터링 등 API 모듈을 지원하는 모듈입니다.
+1. admin-api: 관리자 API 모듈 입니다.
+2. dailyge-api: 스케줄 관리 서비스 API 모듈 입니다.
+4. storage: 데이터베이스 모듈 입니다.
+5. support 로깅, 모니터링 등 API 모듈을 지원하는 모듈 입니다.
 
 <br/><br/><br/><br/>
 
@@ -124,7 +132,7 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 <br/><br/><br/><br/><br/><br/><br/>
 
-# 6. Package
+# 7. Package
 
 core 패키지는 서비스에 관한 기능을, common 패키지는 프로젝트에서 공통으로 사용되는 클래스 또는 설정을 포함하고 있습니다. 상위 계층은 하위 계층에 의존하지 않으며, 하위 계층의 존재를 알지 못합니다.
 
@@ -136,7 +144,7 @@ core 패키지는 서비스에 관한 기능을, common 패키지는 프로젝�
 │           └─📁 core       
 │             └─📁 user                       # 도메인
 │                ├─📁 external                # 외부 시스템 호출 계층         - Optional
-│                ├─📁 presentation            # 표면 계층  
+│                ├─📁 presentation            # 표면 계층
 │                ├─📁 facade                  # 퍼사드 계층                 - Optional
 │                ├─📁 application             # 서비스 계층
 │                └─📁 persistence             # 영속 계층
