@@ -31,9 +31,9 @@ Dailyge로 일정 관리를 간편하게! <br>
 
 # 1. Service Introduction.
 
-![image](https://private-user-images.githubusercontent.com/26461307/254004795-459be0a9-1ba9-4d75-9a33-b36ed1747db8.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTkxNjY5MzIsIm5iZiI6MTcxOTE2NjYzMiwicGF0aCI6Ii8yNjQ2MTMwNy8yNTQwMDQ3OTUtNDU5YmUwYTktMWJhOS00ZDc1LTlhMzMtYjM2ZWQxNzQ3ZGI4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjIzVDE4MTcxMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTVjMmRlZmQ4MTRkNDE3Njk5NWRkMWM0ZDNlZmI4MDMyZTZjMGMxMjAwZjE2ZTA1OTRiZWEyYTYwYWM5OTkzZmUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.Lun8NFrdt_Aj8TAvTele5iJdUmgZeq3StlPK7DSKgKA)
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbGAESd%2FbtsJnrmbCzr%2FI3OIR1VM5LFYxuMnXrP9X1%2Fimg.png)
 
-![image](https://private-user-images.githubusercontent.com/26461307/254005596-27586832-3bd7-4cbb-a659-1e446ed996d3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTkxNjY5MzIsIm5iZiI6MTcxOTE2NjYzMiwicGF0aCI6Ii8yNjQ2MTMwNy8yNTQwMDU1OTYtMjc1ODY4MzItM2JkNy00Y2JiLWE2NTktMWU0NDZlZDk5NmQzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjIzVDE4MTcxMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWU1M2RmYjA5NjE5YTVhZDhmMjVjYTA2NGQ0MTc5N2RjNzkxN2QwZGRhMWJlMjRjMjE4YTUzYmYyZjQ0MGNmNzMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.02EWNbOI5F307rR4idGFJlknmQPTQyCFyaKU4JbjCls)
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FEVA0Y%2FbtsJnhxeyvw%2FxEpotIGhrNVG8Gb9VWlPxk%2Fimg.png)
 
 <br/><br/><br/><br/><br/><br/><br/>
 
@@ -71,7 +71,7 @@ Java/SpringBoot를 사용해 애플리케이션을 구축했습니다. Liquibase
 
 협업 툴은 이슈 트래킹을 위해 Jira/Confluencer를, 자동화 툴은 Zapier와 GitAction을 사용하고 있습니다. 팀원 간 커뮤니케이션은 Slack으로 이루어지며, 또한 CICD 과정에서 발생한 리포트, AWS 비용 결과도 Slack으로 보고 받고 있습니다. 팀원 간 코드 컨벤션 관리 및 코드 스멜 제거를 위해 CheckStlye, PMD, SonarCloud와 같은 정적 코드 분석 툴을 사용하고 있습니다.
 
-![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FS4C8q%2FbtsIaFkRVfB%2FLL4VJpYGVJZLMKi6h5yed1%2Fimg.png)
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fl2pkf%2FbtsJd9tyhbM%2FvEkghskriwATuz7kFAl5x0%2Fimg.png)
 
 <br/><br/><br/><br/><br/><br/><br/>
 
