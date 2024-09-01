@@ -29,7 +29,7 @@ Dailyge로 일정 관리를 간편하게! <br>
 
 <br/><br/><br/><br/><br/><br/><br/>
 
-# 1. Service Introduction.
+# 1. Service.
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbGAESd%2FbtsJnrmbCzr%2FI3OIR1VM5LFYxuMnXrP9X1%2Fimg.png)
 
@@ -41,11 +41,11 @@ Dailyge로 일정 관리를 간편하게! <br>
 
 Backend, Infra, 협업에 사용된 기술 스택/툴은 다음과 같습니다.
 
-1. [Backend]()
+1. Backend
 
-2. [Infra]()
+2. Infra
 
-3. [Collaboration]()
+3. Collaboration
 
 <br/><br/><br/>
 
