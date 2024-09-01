@@ -188,7 +188,7 @@ core 패키지는 서비스에 관한 기능을, common 패키지는 프로젝�
 
 <div align="center">
 
-| [Youl](https://github.com/beatmeJY) | [Jun](https://github.com/devjun10) | [Yui](https://github.com/kmularise) |
+| [beatmeJy](https://github.com/beatmeJY) | [devjun10](https://github.com/devjun10) | [kmularise](https://github.com/kmularise) |
 | :---: | :---: | :---: |
 |<img width="150" src="https://avatars.githubusercontent.com/u/54700818?v=4">|<img width="150" src="https://avatars.githubusercontent.com/u/92818747?v=4">|<img width="150" src="https://avatars.githubusercontent.com/u/106499310?v=4">|
 |**Backend, Frontend**|**Backend, Infra**|**Backend**|
