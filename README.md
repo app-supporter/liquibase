@@ -141,11 +141,11 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 <br/><br/><br/><br/>
 
-모듈간 의존관계는 다음과 같습니다. 불필요한 의존성 제거, 빌드 시간 단축을 위해 위해 대체로 runtimeOnly 또는 imeimplementation [구성(Configuration)](https://docs.gradle.org/current/userguide/declaring_dependencies.html)을 사용하고 있습니다.
+모듈간 의존관계는 다음과 같으며, 불필요한 의존성 제거, 빌드 시간 단축을 위해 위해 대체로 runtimeOnly 또는 imeimplementation [구성(Configuration)](https://docs.gradle.org/current/userguide/declaring_dependencies.html)을 사용하고 있습니다.
 
 <br/>
 
-![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcHD02o%2FbtsH8G6bEze%2FgkOXvPS5h9ZNeIdKRDl9VK%2Fimg.png)
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FeqqS6s%2FbtsJoC8aCoQ%2F8sbzZjmkmY6QH1FDLfHJ21%2Fimg.png)
 
 <br/><br/><br/><br/><br/><br/><br/>
 
@@ -175,12 +175,6 @@ core 패키지는 서비스에 관한 기능을, common 패키지는 프로젝�
 각 계층의 의존성은 다음과 같습니다.
 > Controller  -->  Facade  -->  Application, External  -->  Persistence
 ```
-
-<br/><br/><br/><br/><br/><br/>
-
-패키지 순환 참조를 막기 위해 주기적으로 패키지 사이클을 관리하고 있습니다. 
-
-![image]()
 
 <br/><br/><br/><br/><br/><br/><br/>
 
