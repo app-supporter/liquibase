@@ -31,6 +31,8 @@ Dailyge로 일정 관리를 간편하게! <br>
 
 # 1. Service.
 
+Dailyge는 일정을 체계적으로 관리하고 하루를 효과적으로 계획하여 중요한 일에 집중할 수 있도록 도와주는 서비스입니다.
+
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbGAESd%2FbtsJnrmbCzr%2FI3OIR1VM5LFYxuMnXrP9X1%2Fimg.png)
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FEVA0Y%2FbtsJnhxeyvw%2FxEpotIGhrNVG8Gb9VWlPxk%2Fimg.png)
