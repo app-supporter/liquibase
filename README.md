@@ -31,7 +31,7 @@
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FY5ifk%2FbtsJeVnHEJH%2FyQlxRPikUxlOzPKbyUs2Fk%2Fimg.png)
 
-> 운영 과정에서 발생하는 이슈는 Grafana Alert 또는 AWS Lambda를 통해 슬랙으로 보고받고 있으며, Lambda와 같은 일부 서비스는 파이썬을 사용중 입니다.
+> 운영 과정에서 발생하는 이슈는 Grafana Alert 또는 AWS Lambda를 통해 슬랙으로 보고받고 있으며, Lambda와 같은 일부 서비스는 Python을 사용중 입니다.
 
 <br/><br/><br/><br/><br/><br/>
 
