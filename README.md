@@ -35,12 +35,6 @@
 
 <br/><br/><br/><br/><br/><br/>
 
-리소스 및 오토 스케일링을 조금 더 세밀하게 제어 가능하기 때문에 Fargate 대신 EC2를 사용하고 있으며, 배포 및 포트 충돌 방지를 위해 ECS 동적 포트를 사용하고 있습니다.
-
-![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FHZfp5%2FbtsJrHb9O9R%2Fp1DqKfWKogvx7gKiMIHPuK%2Fimg.png)
-
-<br/><br/><br/><br/><br/><br/>
-
 # 2. CI/CD
 
 PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결과를 보고받습니다. 팀원 간 코드 리뷰를 거친 후, dev 브랜치로 병합이 되면 개발 서버로 배포가 되며, 인수 테스트가 시작됩니다. 자동 인수 테스트 외에도 QA를 진행하며 기능의 동작 유무, 버그 리포팅을 합니다. main 브랜치로 병합이 되면 상용 서버로 배포가 되며, 최종 결과를 보고받습니다.
@@ -75,7 +69,7 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 ## 4-1. Resource 관리
 
-프로비저닝을 한 후, 변경될 일이 적은 자원들은 ignore_changes를 통해 테라폼 라이프사이클에서 제외한 후, 관리하고 있습니다.
+프로비저닝을 한 후, 변경될 일이 적은 자원들과 데이터베이스는 ignore_changes를 통해 테라폼 라이프사이클에서 제외한 후, 관리하고 있습니다.
 
 ```shell
 resource "aws_cloudfront_distribution" "s3_distribution_tasks_dev" {
@@ -90,7 +84,7 @@ resource "aws_cloudfront_distribution" "s3_distribution_tasks_dev" {
 
 <br/><br/><br/><br/><br/><br/>
 
-## 3-1. Config
+## 4-2. Config
 
 Git Submodule과 AWS Secret Manager를 사용해 환경 변수를 관리하고 있습니다.
 
@@ -131,7 +125,15 @@ spring:
 
 <br/><br/><br/><br/><br/><br/>
 
-## 3-2. RateLimiter
+## 4-3. Server
+
+리소스 및 오토 스케일링을 조금 더 세밀하게 제어하기 위해 Fargate 대신 EC2를 사용하고 있으며, 배포 및 포트 충돌 방지를 위해 ECS 동적 포트를 사용하고 있습니다.
+
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FHZfp5%2FbtsJrHb9O9R%2Fp1DqKfWKogvx7gKiMIHPuK%2Fimg.png)
+
+<br/><br/><br/><br/><br/><br/>
+
+## 4-4. RateLimiter
 
 Route53에서 WAF로 일정 시간 동안 최대 사용자 요청을 제한하고 있으며, 모니터링 서버, 관리자 API 등 특정 리소스에 대한 접근은 ALB와 WAF, Security Group으로 제한하고 있습니다.
 
@@ -141,7 +143,7 @@ Route53에서 WAF로 일정 시간 동안 최대 사용자 요청을 제한하�
 
 <br/><br/><br/><br/><br/><br/>
 
-## 3-3. Monitoring
+## 4-5. Monitoring
 
 모니터링은 Prometheus와 Grafana를 CloudWatch와 연동해 사용하고 있으며, 이를 통해 알림을 받고 있습니다. 모니터링 중인 리소스는 EC2 서버, 애플리케이션 지표, RDS, Redis, MongoDB 이며, CPU/메모리 사용률, Slow Query 등을 체크하고 있습니다.
 
@@ -176,7 +178,7 @@ resource "aws_appautoscaling_policy" "dailyge_api_scale_out_policy" {
 
 <br/><br/><br/><br/><br/><br/>
 
-## 3-4. Log
+## 5-6. Log
 
 로그는 당일 로그는 CloudWatch로 관리하고 있으며, 하루가 지난 로그는 S3로 전송 후, 제거하고 있습니다.
 
@@ -184,7 +186,13 @@ resource "aws_appautoscaling_policy" "dailyge_api_scale_out_policy" {
 
 <br/><br/><br/><br/><br/><br/>
 
-## 4. Modules
+## 5-7. DB 백업
+
+데이터베이스는 매일 새벽 3시마다 백업을 하고 있습니다. 
+
+<br/><br/><br/><br/><br/><br/>
+
+## 6. Modules
 
 modules 내부에 개발 환경을 기준으로 파일을 구분하고 있습니다. 명시적으로 dev, prod 패키지를 나누었지만 프로젝트 규모가 작기 때문에 dev 하나만 사용하고 있습니다. 
 
