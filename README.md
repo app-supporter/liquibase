@@ -66,6 +66,13 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 # 4. Contents
 
+1. Resource 관리
+2. Config 관리
+3. Server
+4. RateLimiter
+5. Monitoring
+6. Log
+7. DB 백업
 
 ## 4-1. Resource 관리
 
@@ -84,7 +91,7 @@ resource "aws_cloudfront_distribution" "s3_distribution_tasks_dev" {
 
 <br/><br/><br/><br/><br/><br/>
 
-## 4-2. Config
+## 4-2. Config 관리
 
 Git Submodule과 AWS Secret Manager를 사용해 환경 변수를 관리하고 있습니다.
 
@@ -178,7 +185,7 @@ resource "aws_appautoscaling_policy" "dailyge_api_scale_out_policy" {
 
 <br/><br/><br/><br/><br/><br/>
 
-## 5-6. Log
+## 4-6. Log
 
 로그는 당일 로그는 CloudWatch로 관리하고 있으며, 하루가 지난 로그는 S3로 전송 후, 제거하고 있습니다.
 
@@ -186,13 +193,13 @@ resource "aws_appautoscaling_policy" "dailyge_api_scale_out_policy" {
 
 <br/><br/><br/><br/><br/><br/>
 
-## 5-7. DB 백업
+## 4-7. DB 백업
 
-데이터베이스는 매일 새벽 3시마다 백업을 하고 있습니다. 
+데이터베이스는 매일 새벽 3시마다 스냅샷은 ㅅ
 
 <br/><br/><br/><br/><br/><br/>
 
-## 6. Modules
+## 5. Modules
 
 modules 내부에 개발 환경을 기준으로 파일을 구분하고 있습니다. 명시적으로 dev, prod 패키지를 나누었지만 프로젝트 규모가 작기 때문에 dev 하나만 사용하고 있습니다. 
 
