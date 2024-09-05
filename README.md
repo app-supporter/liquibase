@@ -31,7 +31,7 @@
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FY5ifk%2FbtsJeVnHEJH%2FyQlxRPikUxlOzPKbyUs2Fk%2Fimg.png)
 
-> 운영 과정에서 발생하는 이슈는 Grafana Alert 또는 AWS Lambda를 통해 슬랙으로 보고받고 있으며, Lambda와 같은 일부 서비스는 Python을 사용중 입니다.
+> 운영 과정에서 발생하는 이슈는 Grafana Alert 또는 AWS Lambda를 통해 슬랙으로 보고받고 있으며, Lambda와 같은 일부 서비스는 Python을 사용 중입니다.
 
 <br/><br/><br/><br/><br/><br/>
 
@@ -78,7 +78,7 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 ## 4-1. Resource 관리
 
-프로비저닝을 후, **`변경될 일이 적은 자원`** 들, 데이터베이스 같이 **`변경 되어선 안 되는 자원`** 들은 ignore_changes를 통해 테라폼 라이프사이클에서 제외한 후, 관리하고 있습니다. 
+프로비저닝을 후, **`변경될 일이 적은 자원`** 들, 데이터베이스같이 **`변경되어선 안 되는 자원`** 들은 ignore_changes를 통해 테라폼 라이프사이클에서 제외한 후, 관리하고 있습니다.
 
 ```shell
 resource "aws_cloudfront_distribution" "s3_distribution_tasks_dev" {
@@ -101,7 +101,7 @@ Git Submodule과 AWS Secret Manager를 사용해 환경 변수를 관리하고 �
 
 <br/><br/><br/><br/><br/><br/>
 
-외부에 노출되는 값들은 암호화 된 상태로 노출됩니다.
+외부에 노출되는 값들은 암호화된 상태로 노출됩니다.
 
 ```yaml
 env:
@@ -148,13 +148,13 @@ Route53에서 WAF로 일정 시간 동안 최대 사용자 요청을 제한하�
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fmm1Pm%2FbtsJen4PTWG%2FR6WvrLH2vsZAu2Jb0x05t0%2Fimg.png)
 
-> 평소에는 분 당 1,000회 이상일 때, IP 기반으로 API 요청 제한을 걸고 있으며, 부하 테스트를 할 때, 이를 해제합니다.
+> 평소에는 분당 1,000회 이상일 때, IP 기반으로 API 요청 제한을 걸고 있으며, 부하 테스트를 할 때, 이를 해제합니다.
 
 <br/><br/><br/><br/><br/><br/>
 
 ## 4-5. Monitoring
 
-모니터링은 Prometheus와 Grafana를 CloudWatch와 연동해 사용하고 있으며, 이를 통해 알림을 받고 있습니다. 모니터링 중인 리소스는 EC2 서버, 애플리케이션 지표, RDS, Redis, MongoDB 이며, CPU/메모리 사용률, Slow Query 등을 체크하고 있습니다.
+모니터링은 Prometheus와 Grafana를 CloudWatch와 연동해 사용하고 있으며, 이를 통해 알림을 받고 있습니다. 모니터링 중인 리소스는 EC2 서버, 애플리케이션 지표, RDS, Redis, MongoDB이며, CPU/메모리 사용률, Slow Query 등을 체크하고 있습니다.
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FeEeYh0%2FbtsJfPz2TdW%2FDD2Zu0zqkZfkljdEFs7960%2Fimg.png)
 
@@ -221,7 +221,7 @@ resource "aws_appautoscaling_policy" "dailyge_api_scale_out_policy" {
 
 ## 5. Modules
 
-modules 내부에 개발 환경을 기준으로 파일을 구분하고 있습니다. 명시적으로 dev, prod 패키지를 나누었지만 프로젝트 규모가 작기 때문에 dev 하나만 사용하고 있습니다. 
+modules 내부에 개발 환경을 기준으로 파일을 구분하고 있습니다. 명시적으로 dev, prod 패키지를 나누었지만, 프로젝트 규모가 작기 때문에 dev 하나만 사용하고 있습니다.
 
 ```shell
 $ tree -L 5
