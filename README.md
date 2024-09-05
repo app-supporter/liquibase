@@ -19,7 +19,7 @@
 1. Skills
 2. CICD
 3. Architecture
-4. Package
+4. Modules
 
 
 <br/><br/><br/><br/>
@@ -29,6 +29,8 @@
 서비스 구축을 위해 AWS를 활용했으며, Terraform을 사용해 자원을 프로비저닝 했습니다. Terraform으로 관리되는 자원은 Route53, CloudFront, S3, ALB, ECS, EC2(Application), RD 이며, 일부 자원들은 설치형으로 사용하고 있습니다. 모니터링은 Prometheus와 Grafana를 사용하고 있으며, 운영 및 시스템 로그는 모두 AWS CloudWatch로 관리하고 있습니다. 운영 과정에서 발생하는 이슈는 Grafana Alert 또는 AWS Lambda를 통해 슬랙으로 보고받고 있습니다.
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FY5ifk%2FbtsJeVnHEJH%2FyQlxRPikUxlOzPKbyUs2Fk%2Fimg.png)
+
+> Lambda와 같은 일부 서비스는 파이썬을 이용해 자동화를 하고 있습니다.
 
 <br/><br/><br/><br/><br/><br/>
 
@@ -54,11 +56,29 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 <br/><br/><br/><br/><br/><br/>
 
+배포 및 포트 충돌 방지를 위해 ECS 동적 포트를 사용하고 있습니다.
+
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FHZfp5%2FbtsJrHb9O9R%2Fp1DqKfWKogvx7gKiMIHPuK%2Fimg.png)
+
+<br/><br/><br/><br/><br/><br/>
+
+## 3-1. WAF
+
 Route53에서 WAF로 일정 시간 동안 최대 사용자 요청을 제한하고 있으며, 모니터링 서버, 관리자 API 등 특정 리소스에 대한 접근은 ALB와 WAF, Security Group으로 제한하고 있습니다.
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fmm1Pm%2FbtsJen4PTWG%2FR6WvrLH2vsZAu2Jb0x05t0%2Fimg.png)
 
 <br/><br/><br/><br/><br/><br/>
+
+## 3-2. RateLimiter
+
+RateLimiter는 마찬가지로 WAF로 제어하고 있으며, 이는 서비스 크기를 고려해 API Gateway를 둘 필요성을 못 느꼈기 때문입니다. 
+
+> 평소에는 분 당 1,000회 이상일 때, IP 기반으로 API 요청 제한을 걸고 있으며, 부하 테스트를 할 때, 이를 해제합니다.
+
+<br/><br/><br/><br/><br/><br/>
+
+## 3-3. Monitoring
 
 모니터링은 Prometheus와 Grafana를 CloudWatch와 연동해 사용하고 있으며, 이를 통해 알림을 받고 있습니다. 모니터링 중인 리소스는 EC2 서버, 애플리케이션 지표, RDS, Redis, MongoDB 이며, CPU/메모리 사용률, Slow Query 등을 체크하고 있습니다.
 
@@ -68,7 +88,32 @@ Route53에서 WAF로 일정 시간 동안 최대 사용자 요청을 제한하�
 
 <br/><br/><br/><br/><br/><br/>
 
-## 4. 패키지 구조
+스케일 아웃은 CPU 사용률이 75% 이상일 때, 1분 이상 지속되면 동작합니다. 이는 CloudWatch와 연동하고 있으며, 이 부분은 테라폼이 아닌 설치형으로 관리하고 있습니다.
+
+```shell
+resource "aws_appautoscaling_policy" "dailyge_api_scale_out_policy" {
+  name               = "dailyge-api-scale-out-policy"
+  policy_type        = "TargetTrackingScaling"
+  resource_id        = aws_appautoscaling_target.dailyge_api_ecs_scaling_target.resource_id
+  scalable_dimension = aws_appautoscaling_target.dailyge_api_ecs_scaling_target.scalable_dimension
+  service_namespace  = aws_appautoscaling_target.dailyge_api_ecs_scaling_target.service_namespace
+
+  target_tracking_scaling_policy_configuration {
+    target_value = 75.0
+
+    predefined_metric_specification {
+      predefined_metric_type = "ECSServiceAverageCPUUtilization"
+    }
+
+    scale_in_cooldown  = 60
+    scale_out_cooldown = 60
+  }
+}
+```
+
+<br/><br/><br/><br/><br/><br/>
+
+## 4. Modules
 
 modules 내부에 개발 환경을 기준으로 파일을 구분하고 있습니다. 명시적으로 dev, prod 패키지를 나누었지만 프로젝트 규모가 작기 때문에 dev 하나만 사용하고 있습니다. 
 
