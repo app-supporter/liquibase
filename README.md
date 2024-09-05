@@ -17,7 +17,7 @@
 # Table of Contents.
 
 1. Skills
-2. CICD
+2. CI/CD
 3. Architecture
 4. Contents
 5. Modules
@@ -27,26 +27,11 @@
 
 # 1. Skills.
 
-서비스 구축을 위해 AWS를 활용했으며, Terraform을 사용해 자원을 프로비저닝 했습니다. Terraform으로 관리되는 자원은 Route53, CloudFront, S3, ALB, ECS, EC2(Application), RD 이며, 일부 자원들은 설치형으로 사용하고 있습니다. 모니터링은 Prometheus와 Grafana를 사용하고 있으며, 운영 및 시스템 로그는 모두 AWS CloudWatch로 관리하고 있습니다. 운영 과정에서 발생하는 이슈는 Grafana Alert 또는 AWS Lambda를 통해 슬랙으로 보고받고 있습니다.
+서비스 구축을 위해 AWS를 활용했으며, Terraform을 사용해 자원을 프로비저닝 했습니다. Terraform으로 관리되는 자원은 Route53, CloudFront, S3, ALB, ECS, EC2(Application), RD 이며, 일부 자원들은 설치형으로 사용하고 있습니다. 모니터링은 Prometheus와 Grafana를 사용하고 있으며, 운영 및 시스템 로그는 모두 AWS CloudWatch로 관리하고 있습니다. 
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FY5ifk%2FbtsJeVnHEJH%2FyQlxRPikUxlOzPKbyUs2Fk%2Fimg.png)
 
-> Lambda와 같은 일부 서비스는 파이썬을 이용해 자동화를 하고 있습니다.
-
-<br/><br/><br/><br/><br/><br/>
-
-프로비저닝을 한 후, 변경될 일이 적은 자원들은 ignore_changes를 통해 테라폼 라이프사이클에서 제외한 후, 관리하고 있습니다.
-
-```shell
-resource "aws_cloudfront_distribution" "s3_distribution_tasks_dev" {
-  
-  ......
-
-  lifecycle {
-    ignore_changes = all
-  }
-}
-```
+> 운영 과정에서 발생하는 이슈는 Grafana Alert 또는 AWS Lambda를 통해 슬랙으로 보고받고 있으며, Lambda와 같은 일부 서비스는 파이썬을 사용중 입니다.
 
 <br/><br/><br/><br/><br/><br/>
 
@@ -56,7 +41,7 @@ resource "aws_cloudfront_distribution" "s3_distribution_tasks_dev" {
 
 <br/><br/><br/><br/><br/><br/>
 
-# 2. CICD
+# 2. CI/CD
 
 PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결과를 보고받습니다. 팀원 간 코드 리뷰를 거친 후, dev 브랜치로 병합이 되면 개발 서버로 배포가 되며, 인수 테스트가 시작됩니다. 자동 인수 테스트 외에도 QA를 진행하며 기능의 동작 유무, 버그 리포팅을 합니다. main 브랜치로 병합이 되면 상용 서버로 배포가 되며, 최종 결과를 보고받습니다.
 
@@ -86,6 +71,24 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 <br/><br/><br/><br/><br/><br/>
 
 # 4. Contents
+
+
+## 4-1. Resource 관리
+
+프로비저닝을 한 후, 변경될 일이 적은 자원들은 ignore_changes를 통해 테라폼 라이프사이클에서 제외한 후, 관리하고 있습니다.
+
+```shell
+resource "aws_cloudfront_distribution" "s3_distribution_tasks_dev" {
+  
+  ......
+
+  lifecycle {
+    ignore_changes = all
+  }
+}
+```
+
+<br/><br/><br/><br/><br/><br/>
 
 ## 3-1. Config
 
