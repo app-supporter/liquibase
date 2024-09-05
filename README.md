@@ -219,7 +219,7 @@ resource "aws_appautoscaling_policy" "dailyge_api_scale_out_policy" {
 
 <br/><br/><br/><br/><br/><br/>
 
-## 5. Modules
+# 5. Modules
 
 modules 내부에 개발 환경을 기준으로 파일을 구분하고 있습니다. 명시적으로 dev, prod 패키지를 나누었지만, 프로젝트 규모가 작기 때문에 dev 하나만 사용하고 있습니다.
 
