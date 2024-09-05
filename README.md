@@ -18,7 +18,7 @@
 
 1. Skills
 2. CICD
-3. Architecture
+3. Architecture & Contents
 4. Modules
 
 
@@ -31,6 +31,27 @@
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FY5ifk%2FbtsJeVnHEJH%2FyQlxRPikUxlOzPKbyUs2Fk%2Fimg.png)
 
 > Lambda와 같은 일부 서비스는 파이썬을 이용해 자동화를 하고 있습니다.
+
+<br/><br/><br/><br/><br/><br/>
+
+프로비저닝을 한 후, 변경될 일이 적은 자원들은 ignore_changes를 통해 테라폼 라이프사이클에서 제외한 후, 관리하고 있습니다.
+
+```shell
+resource "aws_cloudfront_distribution" "s3_distribution_tasks_dev" {
+  
+  ......
+
+  lifecycle {
+    ignore_changes = all
+  }
+}
+```
+
+<br/><br/><br/><br/><br/><br/>
+
+리소스 및 오토 스케일링을 조금 더 세밀하게 제어 가능하기 때문에 Fargate 대신 EC2를 사용하고 있으며, 배포 및 포트 충돌 방지를 위해 ECS 동적 포트를 사용하고 있습니다.
+
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FHZfp5%2FbtsJrHb9O9R%2Fp1DqKfWKogvx7gKiMIHPuK%2Fimg.png)
 
 <br/><br/><br/><br/><br/><br/>
 
@@ -48,7 +69,7 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 <br/><br/><br/><br/><br/><br/>
 
-# 3. Architecture
+# 3. Architecture & Contents
 
 정적 자원은 S3와 CloudFront를, 서버 오케스트레이션은 AWS ECS를 사용했습니다. 각 리소스는 VPC 내부 별도의 서브넷(Public/Private)에 존재하며, ALB와 NAT를 통해 외부와 통신합니다. 부하 테스트를 할 때는 terraform을 통해 서버를 동적으로 확장하고 있으며, 평상시에는 최소 인스턴스만 사용하고 있습니다.
 
@@ -56,23 +77,59 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 <br/><br/><br/><br/><br/><br/>
 
-배포 및 포트 충돌 방지를 위해 ECS 동적 포트를 사용하고 있습니다.
+서브 도메인을 적극 활용하고 있으며, 서브 도메인 간 쿠키를 공유해 사용하고 있습니다. 개발 서버, 모니터링 서버와 같은 서브 도메인에 대한 접근은 WAF 및 Security Group으로 관리하고 있습니다.
 
-![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FHZfp5%2FbtsJrHb9O9R%2Fp1DqKfWKogvx7gKiMIHPuK%2Fimg.png)
+- [연관 PR](https://github.com/dailyge/dailyge-server/pull/104)
+- [Discussion](https://github.com/dailyge/dailyge-server/discussions/105)
 
 <br/><br/><br/><br/><br/><br/>
 
-## 3-1. WAF
+## 3-1. Config
 
-Route53에서 WAF로 일정 시간 동안 최대 사용자 요청을 제한하고 있으며, 모니터링 서버, 관리자 API 등 특정 리소스에 대한 접근은 ALB와 WAF, Security Group으로 제한하고 있습니다.
+Git Submodule과 AWS Secret Manager를 사용해 환경 변수를 관리하고 있습니다.
 
-![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fmm1Pm%2FbtsJen4PTWG%2FR6WvrLH2vsZAu2Jb0x05t0%2Fimg.png)
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FItHHb%2FbtsJtvHX9UV%2FlkH7j2DRpTuDy2KOiwoBa1%2Fimg.png)
+
+<br/><br/><br/><br/><br/><br/>
+
+외부에 노출되는 값들은 암호화 된 상태로 노출됩니다.
+
+```yaml
+env:
+  dev
+
+profile:
+  email: ENC(EoatZjyTeks503/9neDp3JfrFlhWwAiRvlYd77599hM=)
+  nickname: ENC(VA1R4pL0mo0xHTfV68j+3xQrJbffCBTb)
+
+spring:
+  cloud:
+    aws:
+      region:
+        static: ap-northeast-2
+      credentials:
+        access-key: ENC(5vaRGdYWZUJsFEFF5P8A06TkwwNl5eapE)
+        secret-key: ENC(JdK2itnFEFDKOdRu7A7zcXmLpOZwbSEWRUwq)
+  liquibase:
+    enabled: true
+    change-log: db/rdb/changelog/changelog-master.yaml
+  datasource:
+    url: ENC(qmiZS71LFX29baI8nNpBKhLlLmsJop5vaRGdYWZUJsFEFF5P8A06TkwwNl5eapyY6/vlVdD6zCLkE8qlJdK2itnMByBKOdRu7A7zcXmLpOZwbSEWRUwqGbRvspsUPEFO/sS0PAqBF25vddL6GJ11onkUFqJZ0hPJt3Qr6toHqXcTH7yZNHlrTMLb2xrPlWU)
+    username: ENC(KHdUpehLSIMFEEyDjj8P/+w==)
+    password: ENC(/KquPoFfhpYAFEFSsumXHPpsdkquc4M)
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+    ......
+
+```
 
 <br/><br/><br/><br/><br/><br/>
 
 ## 3-2. RateLimiter
 
-RateLimiter는 마찬가지로 WAF로 제어하고 있으며, 이는 서비스 크기를 고려해 API Gateway를 둘 필요성을 못 느꼈기 때문입니다. 
+Route53에서 WAF로 일정 시간 동안 최대 사용자 요청을 제한하고 있으며, 모니터링 서버, 관리자 API 등 특정 리소스에 대한 접근은 ALB와 WAF, Security Group으로 제한하고 있습니다.
+
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fmm1Pm%2FbtsJen4PTWG%2FR6WvrLH2vsZAu2Jb0x05t0%2Fimg.png)
 
 > 평소에는 분 당 1,000회 이상일 때, IP 기반으로 API 요청 제한을 걸고 있으며, 부하 테스트를 할 때, 이를 해제합니다.
 
@@ -110,6 +167,14 @@ resource "aws_appautoscaling_policy" "dailyge_api_scale_out_policy" {
   }
 }
 ```
+
+<br/><br/><br/><br/><br/><br/>
+
+## 3-4. Log
+
+로그는 당일 로그는 CloudWatch로 관리하고 있으며, 하루가 지난 로그는 S3로 전송 후, 제거하고 있습니다.
+
+> 로그는 요청 경로, 메서드, IP 주소(Origin), 파라미터, 응답 시간 등을 남기고 있습니다.
 
 <br/><br/><br/><br/><br/><br/>
 
