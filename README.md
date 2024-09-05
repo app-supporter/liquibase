@@ -18,8 +18,9 @@
 
 1. Skills
 2. CICD
-3. Architecture & Contents
-4. Modules
+3. Architecture
+4. Contents
+5. Modules
 
 
 <br/><br/><br/><br/>
@@ -69,7 +70,7 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 <br/><br/><br/><br/><br/><br/>
 
-# 3. Architecture & Contents
+# 3. Architecture
 
 정적 자원은 S3와 CloudFront를, 서버 오케스트레이션은 AWS ECS를 사용했습니다. 각 리소스는 VPC 내부 별도의 서브넷(Public/Private)에 존재하며, ALB와 NAT를 통해 외부와 통신합니다. 부하 테스트를 할 때는 terraform을 통해 서버를 동적으로 확장하고 있으며, 평상시에는 최소 인스턴스만 사용하고 있습니다.
 
@@ -83,6 +84,8 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 - [Discussion](https://github.com/dailyge/dailyge-server/discussions/105)
 
 <br/><br/><br/><br/><br/><br/>
+
+# 4. Contents
 
 ## 3-1. Config
 
