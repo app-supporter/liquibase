@@ -78,7 +78,7 @@ PR이 생성되면 자동으로 정적 분석을 시작하며, Slack으로 결�
 
 ## 4-1. Resource 관리
 
-프로비저닝을 한 후, 변경될 일이 적은 자원들과 데이터베이스 같이 변경 되어선 안 되는 자원들은 ignore_changes를 통해 테라폼 라이프사이클에서 제외한 후, 관리하고 있습니다. 
+프로비저닝을 후, **`변경될 일이 적은 자원`** 들, 데이터베이스 같이 **`변경 되어선 안 되는 자원`** 들은 ignore_changes를 통해 테라폼 라이프사이클에서 제외한 후, 관리하고 있습니다. 
 
 ```shell
 resource "aws_cloudfront_distribution" "s3_distribution_tasks_dev" {
@@ -189,7 +189,25 @@ resource "aws_appautoscaling_policy" "dailyge_api_scale_out_policy" {
 
 ## 4-6. Log
 
-로그는 당일 로그는 CloudWatch로 관리하고 있으며, 하루가 지난 로그는 S3로 전송 후, 제거하고 있습니다.
+당일 로그는 CloudWatch로 관리하고 있으며, 하루가 지난 로그는 S3로 전송 후, 제거하고 있습니다.
+
+```json
+{
+    "server": "dailyge-api",
+    "path": "/api/monthly-tasks",
+    "method": "POST",
+    "traceId": "40cfde91-c912-4f3a-9b02-d45b3c066edb",
+    "ip": "127.0.0.1",
+    "layer": "ENTRANCE",
+    "visitor": "{ "userId":null, "role":"GUEST" }",
+    "time": "2024-08-06T07:29:48.745",
+    "duration": "0ms",
+    "context": {
+        "args": null,
+        "result": null
+    }
+}
+```
 
 > 로그는 요청 경로, 메서드, IP 주소(Origin), 파라미터, 응답 시간 등을 남기고 있습니다.
 
