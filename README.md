@@ -215,7 +215,7 @@ resource "aws_appautoscaling_policy" "dailyge_api_scale_out_policy" {
 
 ## 4-7. DB 백업
 
-데이터베이스는 매일 새벽 3시마다 스냅샷은 ㅅ
+데이터베이스는 매일 새벽 3시마다 스냅샷을 생성해 백업하고 있습니다. 
 
 <br/><br/><br/><br/><br/><br/>
 
