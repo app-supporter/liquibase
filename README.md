@@ -1,19 +1,3 @@
-
-# Dailyge Infra
-
-<div align="center">
-  <img width="400" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FCl3Zr%2FbtsH9tFrQxe%2F4Wd1nL8FuHANpzi9flDwBK%2Fimg.png"><br/><br/>
-</div>
-  
-<div align="center">
-  
-  Dailyge Infra 저장소 입니다.  <br>
-  서비스 소개는 [해당 링크]()를 참조해주세요. 😃 
-
-</div>
-
-<br/><br/><br/><br/><br/><br/>
-
 # Step1. 
 
 
